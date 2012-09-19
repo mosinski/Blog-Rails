@@ -38,3 +38,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+gem "bb-ruby", "~> 0.9.5"
