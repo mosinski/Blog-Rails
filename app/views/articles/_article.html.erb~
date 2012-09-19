@@ -1,8 +1,31 @@
-  <h1 itemprop="name"><%= link_to article.title, article %></h1>
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+ <div class="postdate">
+  <script type="text/javascript">
+      var timestamp = <%= article.updated_at %>;
+      if (timestamp != '') {
+      var timesplit = timestamp.split("-");
+      var date_yyyy = timesplit[0];
+      var date_dd = timesplit[2];
+      var date_mmm = timesplit[1];
+      }
+      </script>
+<div class="postmonth"><%= article.created_at.strftime("%m")%></div>
+<div class="postday"><%= article.created_at.strftime("%d")%></div>
+</div>
+
+ <h1 itemprop="name"><%= link_to article.title, article %></h1>
+
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
   <%= article.body %>
+</div>
+
+<div class="postmetadata">
+   <div class="meta">
+      <em>Ostatnia modyfikacja </em><%= article.updated_at %><em> przez </em><b>Miłosz Osiński</b>
+	</div>
 </div>
 
 <%= link_to 'Show', article %>
 <%= link_to 'Edit', edit_article_path(article) %>
 <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
+</div>

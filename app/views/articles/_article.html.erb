@@ -1,7 +1,20 @@
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+
+ <div class="postdate">
+	<div class="postmonth"><%= article.created_at.strftime("%m")%></div>
+	<div class="postday"><%= article.created_at.strftime("%d")%></div>
+</div>
+
  <h1 itemprop="name"><%= link_to article.title, article %></h1>
+
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
   <%= article.body %>
+</div>
+
+<div class="postmetadata">
+   <div class="meta">
+      <em>Ostatnia modyfikacja </em><%= article.updated_at %><em> przez </em><b>Miłosz Osiński</b>
+	</div>
 </div>
 
 <%= link_to 'Show', article %>

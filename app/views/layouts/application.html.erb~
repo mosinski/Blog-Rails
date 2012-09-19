@@ -8,7 +8,7 @@ try{var m=null;a.chrome&&a.chrome.csi&&(m=Math.floor(a.chrome.csi().pageT),j&&0<
  })();</script>
 <meta content="true" name="MSSmartTagsPreventParsing">
 <meta content="blogger" name="generator">
-<link href="http://www.gutenberg.org/files/17440/17440-h/images/capM.png" rel="icon" type="image/x-icon">
+<link href="http://www.clicktime.com/images/icons/blog-icon.png" rel="icon" type="image/x-icon">
 <link href="http://simonwpframework-btemplates.blogspot.com/" rel="canonical">
 <link rel="alternate" type="application/atom+xml" title="Simon WP Framework - Atom" href="http://simonwpframework-btemplates.blogspot.com/feeds/posts/default">
 <link rel="alternate" type="application/rss+xml" title="Simon WP Framework - RSS" href="http://simonwpframework-btemplates.blogspot.com/feeds/posts/default?alt=rss">
