@@ -15,7 +15,7 @@
    <div class="meta">
 	<span class="time"><em>Ostatnia modyfikacja </em><%= article.updated_at %><em> przez </em><b>Miłosz Osiński</b></span>
 	</div>
-	<span class="categories">Kategoria:</span><%= article.kategoria %><span class="post-comments">Ilość komentarzy:</span><%= article.comments.count %>
+	<span class="categories">Kategoria: </span><%= article.kategoria %><span class="post-comments">Ilość komentarzy: </span><%= article.comments.count %>
 </div>
 
 <%= link_to 'Show', article %>
