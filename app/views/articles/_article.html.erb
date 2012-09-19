@@ -1,12 +1,10 @@
-<p>
-  <b>Title:</b>
-  <%= article.title %>
-</p>
-<p>
-  <b>Body:</b>
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+ <h1 itemprop="name"><%= link_to article.title, article %></h1>
+<div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
   <%= article.body %>
-</p>
+</div>
 
 <%= link_to 'Show', article %>
 <%= link_to 'Edit', edit_article_path(article) %>
 <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
+</div>

@@ -1,0 +1,8 @@
+  <h1 itemprop="name"><%= link_to article.title, article %></h1>
+<div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
+  <%= article.body %>
+</div>
+
+<%= link_to 'Show', article %>
+<%= link_to 'Edit', edit_article_path(article) %>
+<%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
