@@ -1,20 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 
-<p>
-  <b>Title:</b>
-  <%= @article.title %>
-</p>
+ <div class="postdate">
+	<div class="postmonth"><%= @article.created_at.strftime("%m")%></div>
+	<div class="postday"><%= @article.created_at.strftime("%d")%></div>
+ </div>
 
-<p>
-  <b>Body:</b>
-  <%= @article.body %>
-</p>
+  <h1 itemprop="name"><%= @article.title %></h1>
+
+
+<div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
+  <%= @article.body.bbcode_to_html_with_formatting.html_safe %>
+</div>
 
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
 
-<h2>Comments</h2>
+<h3>Komentarze</h3>
 <%= render :partial => @article.comments %>
 </div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
@@ -28,7 +30,7 @@
   </div>
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.text_area :body, :rows => "10" %>
   </div>
   <p><%= f.submit %></p>
 <% end %>
