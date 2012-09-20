@@ -26,6 +26,8 @@ Mosinski Blog
 <link type="text/css" rel="stylesheet" href="Simon%20WP%20Framework_pliki/4219271310-widget_css_2_bundle.css">
 <link type="text/css" rel="stylesheet" href="Simon%20WP%20Framework_pliki/authorization.css">
   <%= javascript_include_tag "application" %>
+
+  <%= stylesheet_link_tag :all %>
 <style id="page-skin-1" type="text/css"><!--
 /*
 Theme Name: Simon WP Framework
@@ -365,7 +367,7 @@ margin: 0;
 padding: 0;
 text-decoration: none;
 border: solid 1px #e3e3e3;
-width: 98%;
+width: 88%;
 }
 input {
 color: #333;
@@ -950,7 +952,7 @@ Zbiór doświadczeń studenta Informatyki..
 </div>
 <div class="grid_4 omega" id="sidebar">
 <div class="grid_2 omega section" id="sidebar2"><div class="widget HTML" id="HTML3">
-<h2 class="title">Blogger news</h2>
+<h2 class="title">Kategorie</h2>
 <div class="widget-content">
 <script type="text/javascript">if(typeof jQuery == 'undefined'){document.write("<scr" + "ipt type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></scr" + "ipt>");}</script>
 <ul id="rssdata1" style=""><li><a href="http://blog.btemplates.com/customizing-blogger-templates-easily-firebug/">Customizing Blogger templates easily with Firebug</a></li><li><a href="http://blog.btemplates.com/papercut-really-cool-social-icons/">PaperCut, really cool social icons.</a></li><li><a href="http://blog.btemplates.com/blogger-dynamic-views/">Blogger Dynamic Views</a></li><li><a href="http://blog.btemplates.com/freedream-blogger-theme/">FreeDream, Blogger theme</a></li><li><a href="http://blog.btemplates.com/matala-layout-for-blogger/">Matala layout for Blogger</a></li></ul><div style="display: none;" id="rssloading1">Loading...</div>

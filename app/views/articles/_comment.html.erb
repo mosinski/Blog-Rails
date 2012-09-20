@@ -1,0 +1,8 @@
+<div class="comment">
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+  <i><%=h comment.name %> says:</i><br />
+  <%= simple_format h(comment.body) %>
+  <%= link_to 'Edit', edit_article_comment_path(@article, comment) %>
+  <%= link_to 'Delete', article_comment_path(@article, comment), :confirm => 'Are you sure?', :method => :delete %>
+</div>
+</div>

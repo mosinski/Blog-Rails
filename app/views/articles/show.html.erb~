@@ -15,9 +15,13 @@
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+</div>
 
-<h2>Comments</h2>
-<%= render :partial => @article.comments %>
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+<h3>Komentarze</h3>
+<div id ="comments">
+  <%= render :partial => 'comment', :collection => @article.comments %> 
+</div>
 </div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <div class="field">
@@ -30,7 +34,7 @@
   </div>
   <div class="field">
     <%= f.label :body %><br />
-    <%= f.text_area :body, :rows => "10" %>
+    <%= f.text_area :body %>
   </div>
   <p><%= f.submit %></p>
 <% end %>

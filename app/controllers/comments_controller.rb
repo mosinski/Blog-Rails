@@ -72,7 +72,7 @@ def update
 
   # DELETE /comments/1
   # DELETE /comments/1.json
-  def destroy
+def destroy
     @comment = Comment.find(params[:id])
     @article = Article.find(params[:article_id])
     @comment.destroy
