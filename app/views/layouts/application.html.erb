@@ -975,22 +975,7 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="widget-content">
 <script type="text/javascript">if(typeof jQuery == 'undefined'){document.write("<scr" + "ipt type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></scr" + "ipt>");}</script>
 <ul id="rssdata1" style=""><li><a href="http://blog.btemplates.com/customizing-blogger-templates-easily-firebug/">NEWS</a></li><li><a href="http://blog.btemplates.com/matala-layout-for-blogger/">JAVA</a></li><li><a href="http://blog.btemplates.com/papercut-really-cool-social-icons/">HTML5</a></li><li><a href="http://blog.btemplates.com/blogger-dynamic-views/">UBUNTU</a></li><li><a href="http://blog.btemplates.com/freedream-blogger-theme/">RUBY ON RAILS</a></li></ul><div style="display: none;" id="rssloading1">Loading...</div>
-<script type="text/javascript">
 
-jQuery.noConflict();
-
-if( ! jQuery().jGFeed ) { (function(jQuery){jQuery.extend({jGFeed:function(url,fnk,num,key){if(url==null){return false;}var gurl="http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&q="+url;if(num!=null){gurl+="&num="+num;}if(key!=null){gurl+="&key="+key;}jQuery.getJSON(gurl,function(data){if(typeof fnk=="function"){fnk.call(this,data.responseData.feed);}else{return false;}});}});})(jQuery); }
-jQuery.jGFeed('http://blog.btemplates.com/feed/',
-function(feeds){
-if(!feeds){return false;}
-for (var i=0; i < feeds.entries.length; i++) {
-	var item = feeds.entries[i];
-	var item_html = '<li><a href="'+item.link+'">'+item.title+'</a></li>';
-	jQuery('#rssdata1').append(item_html);
-}
-jQuery('#rssloading1').fadeOut();
-jQuery('#rssdata1').slideDown();
-}, 5);</script>
 </div>
 <div class="clear"></div>
 <span class="widget-item-control">
