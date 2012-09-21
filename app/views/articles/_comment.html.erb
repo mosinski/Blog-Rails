@@ -2,7 +2,7 @@
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 
 
-  <b><%=h comment.name %></b> <%= comment.created_at.strftime("%d.%m.%y %H:%M %Z")%><br />
+  <b><%=h comment.name %></b> <%= comment.created_at.strftime("%d.%m.%y %H:%M")%><br />
   <hr><br />
   <%= simple_format h(comment.body) %>
   <%= link_to 'Edit', edit_article_comment_path(@article, comment) %>
