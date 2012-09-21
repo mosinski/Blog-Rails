@@ -26,6 +26,9 @@ Mosinski Blog
 <link type="text/css" rel="stylesheet" href="Simon%20WP%20Framework_pliki/4219271310-widget_css_2_bundle.css">
 <link type="text/css" rel="stylesheet" href="Simon%20WP%20Framework_pliki/authorization.css">
   <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'print',  :media => 'print' %>
 <style id="page-skin-1" type="text/css"><!--
 /*
 Theme Name: Simon WP Framework
