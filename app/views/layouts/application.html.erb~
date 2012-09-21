@@ -26,9 +26,6 @@ Mosinski Blog
 <link type="text/css" rel="stylesheet" href="Simon%20WP%20Framework_pliki/4219271310-widget_css_2_bundle.css">
 <link type="text/css" rel="stylesheet" href="Simon%20WP%20Framework_pliki/authorization.css">
   <%= javascript_include_tag "application" %>
-  <%= stylesheet_link_tag 'scaffold' %>
-  <%= stylesheet_link_tag 'screen', :media => 'screen' %>
-  <%= stylesheet_link_tag 'print',  :media => 'print' %>
 <style id="page-skin-1" type="text/css"><!--
 /*
 Theme Name: Simon WP Framework
@@ -282,7 +279,7 @@ clear: both;
 }
 /* Comment */
 #comments-title:before {
-content:"Comments: ";
+content:"Komentarze: ";
 }
 #comments-title {
 padding: 30px 0px 0px 0px;
@@ -301,6 +298,7 @@ background: #e3e3e3;
 .user {display:block;}
 #comment-block {
 margin: 0px 0px 30px 0px;
+background: url("http://3.bp.blogspot.com/-C2MCJiDygv8/T9EVS0wnwII/AAAAAAAAC4Q/mc2zY8fLRMs/s000/comment-block-bg.png") no-repeat scroll center top transparent;
 }
 #comment-block ol {
 padding:20px;
@@ -312,6 +310,16 @@ font-size: 16px;
 list-style-type: none;
 padding: 0px 0px 0px 40px;
 }
+#comment-body{
+    border-top: 1px dotted rgb(227, 227, 227);
+    padding: 15px 0px 5px;
+    color: rgb(119, 119, 119);
+    font-size: 10px;
+    line-height: 1px;
+    text-transform: capitalize;
+    clear: both;
+}
+
 .avatar-image-container {
 float: left;
 margin: 0 5px 0 0;

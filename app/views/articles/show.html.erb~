@@ -17,11 +17,9 @@
 <%= link_to 'Back', articles_path %>
 </div>
 
-<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
-<h3>Komentarze</h3>
-<div id ="comments">
+<div class="comment-block">
+<h3 id="comments-title"><%= @article.comments.count %></h3>
   <%= render :partial => 'comment', :collection => @article.comments %> 
-</div>
 </div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <div class="field">

@@ -17,9 +17,8 @@
 <%= link_to 'Back', articles_path %>
 </div>
 
-
-<h3>Komentarze</h3>
-<div id ="comments">
+<div id="comment-block">
+<h3 id="comments-title"><%= @article.comments.count %></h3>
   <%= render :partial => 'comment', :collection => @article.comments %> 
 </div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
