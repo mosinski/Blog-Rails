@@ -972,7 +972,7 @@ Zbiór doświadczeń studenta Informatyki..
 <table cellpadding="0" cellspacing="0" border="0">
 <tbody><tr>
 <td valign="middle" align="center">
-<%= text_field_tag  :search, params[:search], :placeholder => 'Wyszukaj: Artykuł' %>
+<%= text_field_tag  :search, params[:search], :placeholder => 'Wyszukaj:' %>
 <% end %></td>
 <td valign="middle" align="center"><input id="searchsubmit" value="Szukaj" type="submit"></td>
 </tr>
