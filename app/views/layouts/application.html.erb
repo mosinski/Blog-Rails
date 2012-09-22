@@ -429,8 +429,9 @@ padding: 7px;
 width: 210px;
 }
 #search {
-width: 265px!important;
+width: 225px!important;
 float: right;
+margin-left:-102px;
 }
 input[type="text"] {
 font-family:Arial, Helvetica, sans-serif;
@@ -508,7 +509,7 @@ background:-moz-linear-gradient(bottom, #aaa, #cecece);
 background:-webkit-gradient(linear, left bottom, left top, from(#aaa), to(#cecece));
 border: 1px solid #aaa;
 padding:1px 13px 4px 13px;
-margin:0px 0px 0px 5px;
+margin:3px 0px 0px 5px;
 width:70px;
 height: 27px;
 -moz-box-shadow-top: inset 0 0 3px #ccc;
@@ -966,11 +967,13 @@ Zbiór doświadczeń studenta Informatyki..
 <!-- /Pages -->
 </div></div>
 <div class="grid_3" id="search">
-<form action="http://simonwpframework-btemplates.blogspot.com/search/" id="searchform" method="get">
+<%= form_tag request.path, :method => 'get' do %>
 <div id="searching">
 <table cellpadding="0" cellspacing="0" border="0">
 <tbody><tr>
-<td valign="middle" align="center"><input id="s" name="q" type="text"></td>
+<td valign="middle" align="center">
+<%= text_field_tag  :search, params[:search], :placeholder => 'Wyszukaj:' %>
+<% end %></td>
 <td valign="middle" align="center"><input id="searchsubmit" value="Szukaj" type="submit"></td>
 </tr>
 </tbody></table>
