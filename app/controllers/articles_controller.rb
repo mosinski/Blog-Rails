@@ -2,8 +2,8 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
-
+    @articles = Article.page(params[:page]).per_page(5).search(params[:search], params[:page])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }

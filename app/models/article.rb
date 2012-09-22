@@ -5,4 +5,11 @@ class Article < ActiveRecord::Base
   validates_uniqueness_of :title
 
    has_many :comments, :dependent => :destroy
+   
+
+def self.search(search, page)
+  paginate :per_page => 5, :page => page,
+           :conditions => ['title like :q or body like :q or kategoria like :q', q: "%#{search}%"], :order => 'created_at'
+end
+
 end
