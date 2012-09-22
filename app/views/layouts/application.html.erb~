@@ -668,7 +668,7 @@ position: relative;
 #navigation ul li a {
 font-weight: bolder;
 display: block;
-line-height: 3.333em;
+line-height: 3.663em;
 padding: 0 1.2125em;
 text-decoration: none;
 }
@@ -993,7 +993,7 @@ Zbiór doświadczeń studenta Informatyki..
 <h2 class="title">Kategorie</h2>
 <div class="widget-content">
 <script type="text/javascript">if(typeof jQuery == 'undefined'){document.write("<scr" + "ipt type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></scr" + "ipt>");}</script>
-<ul id="rssdata1" style=""><li><a href="http://blog.btemplates.com/customizing-blogger-templates-easily-firebug/">NEWS</a></li><li><a href="http://blog.btemplates.com/matala-layout-for-blogger/">JAVA</a></li><li><a href="http://blog.btemplates.com/papercut-really-cool-social-icons/">HTML5</a></li><li><a href="http://blog.btemplates.com/blogger-dynamic-views/">UBUNTU</a></li><li><a href="http://blog.btemplates.com/freedream-blogger-theme/">RUBY ON RAILS</a></li></ul><div style="display: none;" id="rssloading1">Loading...</div>
+<ul id="rssdata1" style=""><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=NEWS/">NEWS</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA/">JAVA</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=HTML5/">HTML5</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=UBUNTU/">UBUNTU</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=RUBY+ON+RAILS/">RUBY ON RAILS</a></li></ul><div style="display: none;" id="rssloading1">Loading...</div>
 
 </div>
 <div class="clear"></div>
