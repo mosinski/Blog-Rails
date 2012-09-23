@@ -93,4 +93,14 @@ private
           id == USER_ID && password == PASSWORD
       end
    end
+
+def feed
+    @articles = Article.all(:select => "title, body, kategoria, posted_at", :order => "create_at DESC", :limit => 20) 
+
+    respond_to do |format|
+      format.html
+      format.rss { render :layout => false } #index.rss.builder
+    end
+end
+
 end
