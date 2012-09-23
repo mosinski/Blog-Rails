@@ -1,4 +1,10 @@
 class CommentsController < ApplicationController
+
+   USER_ID, PASSWORD = "m1l05z", "mybl0g"
+ 
+   # Require authentication only for edit and delete operation
+   before_filter :authenticate, :only => [ :edit, :delete ]
+
   # GET /comments
   # GET /comments.json
   def index
@@ -82,4 +88,11 @@ def destroy
       format.xml  { head :ok }
     end
   end
+
+private
+   def authenticate
+      authenticate_or_request_with_http_basic do |id, password| 
+          id == USER_ID && password == PASSWORD
+      end
+   end
 end

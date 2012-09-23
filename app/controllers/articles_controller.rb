@@ -1,4 +1,10 @@
 class ArticlesController < ApplicationController
+
+   USER_ID, PASSWORD = "m1l05z", "mybl0g"
+ 
+   # Require authentication only for edit and delete operation
+   before_filter :authenticate, :only => [ :new, :edit, :delete ]
+
   # GET /articles
   # GET /articles.json
   def index
@@ -80,4 +86,11 @@ class ArticlesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+   def authenticate
+      authenticate_or_request_with_http_basic do |id, password| 
+          id == USER_ID && password == PASSWORD
+      end
+   end
 end

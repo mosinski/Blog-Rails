@@ -137,6 +137,7 @@ color: black;
 font-size:42px;
 letter-spacing:-2.5px;
 text-decoration: none;
+text-shadow: 0px 1px 1px rgb(255, 255, 255);
 }
 #header h1 a:hover {
 color: #333;
@@ -269,18 +270,20 @@ margin: 0px;
 padding: 0px 0px 10px 30px;
 }
 .sidebar-title {
-    margin: 0px 0px 5px;
+    margin: -8px -17px 10px;
     padding: 10px 0px 8px 12px;
     text-align: left;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 17px;
     color: rgb(80, 80, 80);
     font-family: Arial,Helvetica,Sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     background: url("http://1.bp.blogspot.com/_sAefHxrmPGg/TXVY5bCkIDI/AAAAAAAACJs/zYZpVL_qqx8/s000/sidebar-tab.png") repeat-x scroll left top transparent;
-    border-left: 3px solid rgb(153, 203, 220);
+    border-left: 5px solid rgb(153, 203, 220);
+    width: 330px;
 }
+
 
 .postmetadata {
 border-top: dotted 1px #e3e3e3;
@@ -958,7 +961,7 @@ head.appendChild(script);
 <div class="container_12" id="header">
 <div class="section" id="header1"><div class="widget Header" id="Header1">
 <h1>
-<a href="http://simonwpframework-btemplates.blogspot.com/">Mosiński Blog</a>
+<a href="">Mosiński Blog</a>
 </h1>
 <div class="description">
 Zbiór doświadczeń studenta Informatyki..
