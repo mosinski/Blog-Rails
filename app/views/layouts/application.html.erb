@@ -63,6 +63,16 @@ height: 100%;
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 display: block;
 }
+.przyciski{
+width:50px;
+height:20px;
+display: block;
+float:right;
+margin-top:-50px;
+}
+.przyciskii{
+display: none;
+}
 b, strong {
 font-weight: bold;
 }
@@ -1135,7 +1145,8 @@ All Comments
 <div class="widget-content">
 Mel putent quaeque an, ut postea melius denique sit. Officiis sensibus 
 at mea, sea at labitur deserunt. Eam dicam congue soluta ut.
-<a href="http://mosinskiblog.herokuapp.com/" rel="alternate" title="RSS" type="application/rss+xml" >RSS</a>
+<%= auto_discovery_link_tag(:rss, "http://mosinskiblog.herokuapp.com") %>
+<link href="http://mosinskiblog.herokuapp.com" rel="alternate" title="RSS" type="application/rss+xml" />
 </div>
 <div class="clear"></div>
 <span class="widget-item-control">
@@ -1197,5 +1208,9 @@ _WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar
 _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/2895759456-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/228702327-lightbox_bundle.css'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header1', null, document.getElementById('Header1'), {}, 'displayModeFull'));
 </script>
-
+<script>
+$('.przyciski').mouseover(function() {
+$('.przyciskii').show(500);}).mouseleave(function() {
+$('.przyciskii').hide("fast");});
+</script>
 </body></html>

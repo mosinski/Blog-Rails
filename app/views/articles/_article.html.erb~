@@ -6,10 +6,14 @@
  </div>
 
  <h1 itemprop="name"><%= link_to article.title, article %></h1>
+<div class="przyciski">
+<%= link_to image_tag("edit.png"), edit_article_path(article), :class => "przyciskii" %>
+<%= link_to image_tag("delete.gif"), article, :confirm => 'Are you sure?', :method => :delete, :class => "przyciskii" %>
+</div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
 <% if article.body.length > 500 %>
-  <%= article.body[0...500].bbcode_to_html_with_formatting.html_safe + "..."%>
+  <%= article.body[0..500].bbcode_to_html_with_formatting.html_safe + "..."%>
 <% else %>
 <%= article.body.bbcode_to_html_with_formatting.html_safe %>
 <% end %>
@@ -21,8 +25,4 @@
 	</div>
 	<span class="categories">Kategoria: </span><%= article.kategoria %><span class="post-comments">Ilość komentarzy: </span><%= article.comments.count %>
 </div>
-
-<%= link_to 'Show', article %>
-<%= link_to 'Edit', edit_article_path(article) %>
-<%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
 </div>

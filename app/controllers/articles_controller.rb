@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
    USER_ID, PASSWORD = "m1l05z", "mybl0g"
  
    # Require authentication only for edit and delete operation
-   before_filter :authenticate, :only => [ :new, :edit, :delete ]
+   before_filter :authenticate, :only => [ :new, :edit, :destroy ]
 
   # GET /articles
   # GET /articles.json
