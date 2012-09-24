@@ -1139,7 +1139,7 @@ All Comments
 <h2 class="sidebar-title">INFO</h2>
 <div class="widget-content">
 Witam na blogu poświęconym informatyce a głównie programowaniu.
-Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. Pozdro
+Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. To tyle miłej lektury.
 <%= auto_discovery_link_tag(:rss, "http://mosinskiblog.herokuapp.com") %>
 <link href="http://mosinskiblog.herokuapp.com" rel="alternate" title="RSS" type="application/rss+xml" />
 </div>
