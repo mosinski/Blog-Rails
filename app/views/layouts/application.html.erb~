@@ -243,7 +243,7 @@ color:#066;
 letter-spacing:0;
 /*background: url(bg_dotted.png) repeat scroll 0px 0px transparent;*/
 background: #F8F8F8;
-padding:2px;
+padding:2px 0px 0px 12px;
 display:block;
 border-left: 5px solid #339900;
 }
@@ -1135,32 +1135,14 @@ All Comments
 <div style="clear:both"></div>
 </div>
 </div>
-<div class="clear"></div>
-<span class="widget-item-control">
-<span class="item-control blog-admin">
-<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6818566096246120476&amp;widgetType=Subscribe&amp;widgetId=Subscribe1&amp;action=editWidget&amp;sectionId=sidebar2" onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target="configSubscribe1" title="Edit">
-<img alt="" src="Simon%20WP%20Framework_pliki/icon18_wrench_allbkg.png" height="18" width="18">
-</a>
-</span>
-</span>
-<div class="clear"></div>
 </div><div class="widget HTML" id="HTML1">
-<h2 class="sidebar-title">About</h2>
+<h2 class="sidebar-title">INFO</h2>
 <div class="widget-content">
-Mel putent quaeque an, ut postea melius denique sit. Officiis sensibus 
-at mea, sea at labitur deserunt. Eam dicam congue soluta ut.
+Witam na blogu poświęconym informatyce a głównie programowaniu.
+Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. Pozdro
 <%= auto_discovery_link_tag(:rss, "http://mosinskiblog.herokuapp.com") %>
 <link href="http://mosinskiblog.herokuapp.com" rel="alternate" title="RSS" type="application/rss+xml" />
 </div>
-<div class="clear"></div>
-<span class="widget-item-control">
-<span class="item-control blog-admin">
-<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6818566096246120476&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget&amp;sectionId=sidebar2" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target="configHTML1" title="Edit">
-<img alt="" src="Simon%20WP%20Framework_pliki/icon18_wrench_allbkg.png" height="18" width="18">
-</a>
-</span>
-</span>
-<div class="clear"></div>
 </div></div>
 </div>
 <div style="clear: both"></div>
@@ -1173,45 +1155,6 @@ Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framew
 <!-- Do Not Remove Our Link On Footer Template. Please Respect Our Work. Thank You. -->
 </div>
 </div>
-<!--Page Navigation Starts-->
-<script type="text/javascript">
-var home_page="/";
-var urlactivepage=location.href;
-var postperpage=3;
-var numshowpage=4;
-var upPageWord ='&#171;';
-var downPageWord ='&#187;';
-</script>
-<script type="text/javascript">
-//<![CDATA[
-
-/* Widgte by www.abu-farhan.com
-copyright by Abu Farhan
-Dont edit without permission from the Copyright owner
-*/
-
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 I;6 i;6 f;6 n;1f();C 1g(15){6 5=\'\';J=K(N/2);4(J==N-J){N=J*2+1}A=f-J;4(A<1)A=1;d=K(15/j)+1;4(d-1==15/j)d=d-1;D=A+N-1;4(D>d)D=d;5+="<3 7=\'1A\'>1B "+f+\' 1C \'+d+"</3>";6 16=K(f)-1;4(f>1){4(f==2){4(i=="o"){5+=\'<3 7="1D"><a 9="\'+B+\'">\'+O+\'</a></3>\'}b{5+=\'<3 7="g"><a 9="/r/s/\'+n+\'?&c-k=\'+j+\'">\'+O+\'</a></3>\'}}b{4(i=="o"){5+=\'<3 7="g"><a 9="#" v="L(\'+16+\');w x">\'+O+\'</a></3>\'}b{5+=\'<3 7="g"><a 9="#" v="M(\'+16+\');w x">\'+O+\'</a></3>\'}}}4(A>1){4(i=="o"){5+=\'<3 7="g"><a 9="\'+B+\'">1</a></3>\'}b{5+=\'<3 7="g"><a 9="/r/s/\'+n+\'?&c-k=\'+j+\'">1</a></3>\'}}4(A>2){5+=\' ... \'}1h(6 l=A;l<=D;l++){4(f==l){5+=\'<3 7="1E">\'+l+\'</3>\'}b 4(l==1){4(i=="o"){5+=\'<3 7="g"><a 9="\'+B+\'">1</a></3>\'}b{5+=\'<3 7="g"><a 9="/r/s/\'+n+\'?&c-k=\'+j+\'">1</a></3>\'}}b{4(i=="o"){5+=\'<3 7="g"><a 9="#" v="L(\'+l+\');w x">\'+l+\'</a></3>\'}b{5+=\'<3 7="g"><a 9="#" v="M(\'+l+\');w x">\'+l+\'</a></3>\'}}}4(D<d-1){5+=\'...\'}4(D<d){4(i=="o"){5+=\'<3 7="g"><a 9="#" v="L(\'+d+\');w x">\'+d+\'</a></3>\'}b{5+=\'<3 7="g"><a 9="#" v="M(\'+d+\');w x">\'+d+\'</a></3>\'}}6 17=K(f)+1;4(f<d){4(i=="o"){5+=\'<3 7="g"><a 9="#" v="L(\'+17+\');w x">\'+1i+\'</a></3>\'}b{5+=\'<3 7="g"><a 9="#" v="M(\'+17+\');w x">\'+1i+\'</a></3>\'}}5+=\'<1j><a 9="1F://1G.1H-1k.1I" 1J="1K-1L: 1M; 1N: 1O; 1P: 1Q;" 1R="1S">1T 1U 1V-1k</a></1j>\';6 E=y.1W("E");6 18=y.1X("1Y-1Z");1h(6 p=0;p<E.P;p++){E[p].1l=5}4(E&&E.P>0){5=\'\'}4(18){18.1l=5}}C 1a(Q){6 R=Q.R;6 1m=K(R.21$22.$t,10);1g(1m)}C 1f(){6 h=u;4(h.e("/r/s/")!=-1){4(h.e("?S-c")!=-1){n=h.F(h.e("/r/s/")+14,h.e("?S-c"))}b{n=h.F(h.e("/r/s/")+14,h.e("?&c"))}}4(h.e("?q=")==-1&&h.e(".5")==-1){4(h.e("/r/s/")==-1){i="o";4(u.e("#G=")!=-1){f=u.F(u.e("#G=")+8,u.P)}b{f=1}y.1n("<m T=\\""+B+"U/V/W?c-k=1&X=Y-Z-m&11=1a\\"><\\/m>")}b{i="s";4(h.e("&c-k=")==-1){j=20}4(u.e("#G=")!=-1){f=u.F(u.e("#G=")+8,u.P)}b{f=1}y.1n(\'<m T="\'+B+\'U/V/W/-/\'+n+\'?X=Y-Z-m&11=1a&c-k=1" ><\\/m>\')}}}C L(H){12=(H-1)*j;I=H;6 13=y.1o(\'1p\')[0];6 z=y.1q(\'m\');z.1r=\'1s/1t\';z.1u("T",B+"U/V/W?1v-1w="+12+"&c-k=1&X=Y-Z-m&11=1b");13.1x(z)}C M(H){12=(H-1)*j;I=H;6 13=y.1o(\'1p\')[0];6 z=y.1q(\'m\');z.1r=\'1s/1t\';z.1u("T",B+"U/V/W/-/"+n+"?1v-1w="+12+"&c-k=1&X=Y-Z-m&11=1b");13.1x(z)}C 1b(Q){1c=Q.R.24[0];6 1y=1c.1z.$t.F(0,19)+1c.1z.$t.F(23,25);6 1d=26(1y);4(i=="o"){6 1e="/r?S-c="+1d+"&c-k="+j+"#G="+I}b{6 1e="/r/s/"+n+"?S-c="+1d+"&c-k="+j+"#G="+I}27.9=1e}',62,132,'|||span|if|html|var|class||href||else|max|maksimal|indexOf|nomerhal|showpageNum|thisUrl|jenis|postperpage|results|jj|script|lblname1|page|||search|label||urlactivepage|onclick|return|false|document|newInclude|mulai|home_page|function|akhir|pageArea|substring|PageNo|numberpage|nopage|nomerkiri|parseInt|redirectpage|redirectlabel|numshowpage|upPageWord|length|root|feed|updated|src|feeds|posts|summary|alt|json|in||callback|jsonstart|nBody||banyakdata|prevnomer|nextnomer|blogPager||hitungtotaldata|finddatepost|post|timestamp|alamat|halamanblogger|loophalaman|for|downPageWord|div|farhan|innerHTML|totaldata|write|getElementsByTagName|head|createElement|type|text|javascript|setAttribute|start|index|appendChild|timestamp1|published|showpageOf|Page|of|showpage|showpagePoint|http|www|abu|com|style|font|size|7pt|float|right|margin|10px|target|_blank|Widget|by|Abu|getElementsByName|getElementById|blog|pager||openSearch|totalResults||entry|29|encodeURIComponent|location'.split('|'),0,{}))
-//]]>
-</script><script src="Simon%20WP%20Framework_pliki/summary"></script>
-<!--Page Navigation Ends-->
-<script type="text/javascript">
-if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
-</script><script type="text/javascript" src="Simon%20WP%20Framework_pliki/3225182667-widgets.js"></script>
-<script type="text/javascript">
-if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '6818566096246120476';BLOG_attachCsiOnload(''); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d6818566096246120476','//simonwpframework-btemplates.blogspot.com/','6818566096246120476');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '6818566096246120476', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Simon WP Framework', 'pageType': 'index', 'url': 'http://simonwpframework-btemplates.blogspot.com/', 'canonicalUrl': 'http://simonwpframework-btemplates.blogspot.com/', 'canonicalHomepageUrl': 'http://simonwpframework-btemplates.blogspot.com/', 'homepageUrl': 'http://simonwpframework-btemplates.blogspot.com/', 'blogspotFaviconUrl': 'http://simonwpframework-btemplates.blogspot.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Simon WP Framework', 'encoding': 'UTF-8', 'locale': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Simon WP Framework - Atom\42 href\75\42http://simonwpframework-btemplates.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Simon WP Framework - RSS\42 href\75\42http://simonwpframework-btemplates.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Simon WP Framework - Atom\42 href\75\42http://www.blogger.com/feeds/6818566096246120476/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0756818566096246120476\42 /\076', 'meTag': '\74link rel\75\42me\42 href\75\42http://www.blogger.com/profile/12379086363603967844\42 /\76\n', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n\74link rel\75\42openid.delegate\42 href\75\42http://simonwpframework-btemplates.blogspot.com/\42 /\76\n', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window,b\75\42jstiming\42,d\75\42tick\42;var e\75function(c){this.t\75{};this.tick\75function(c,p,h){h\75void 0!\75h?h:(new Date).getTime();this.t[c]\75[h,p]};this[d](\42start\42,null,c)},f\75new e;a.jstiming\75{Timer:e,load:f};if(a.performance\46\46a.performance.timing){var g\75a.performance.timing,j\75a[b].load,k\75g.navigationStart,l\75g.responseStart;0\74k\46\46l\76\75k\46\46(j[d](\42_wtsrt\42,void 0,k),j[d](\42wtsrt_\42,\42_wtsrt\42,l),j[d](\42tbsd_\42,\42wtsrt_\42))}\ntry{var m\75null;a.chrome\46\46a.chrome.csi\46\46(m\75Math.floor(a.chrome.csi().pageT),j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.chrome.csi().startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));null\75\75m\46\46a.gtbExternal\46\46(m\75a.gtbExternal.pageT());null\75\75m\46\46a.external\46\46(m\75a.external.pageT,j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.external.startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));m\46\46(a[b].pt\75m)}catch(n){};a.tickAboveFold\75function(c){var i\0750;if(c.offsetParent){do i+\75c.offsetTop;while(c\75c.offsetParent)}c\75i;750\76\75c\46\46a[b].load[d](\42aft\42)};var q\75!1;function r(){q||(q\75!0,a[b].load[d](\42firstScrollTime\42))}a.addEventListener?a.addEventListener(\42scroll\42,r,!1):a.attachEvent(\42onscroll\42,r);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42//www.blogger.com/static/v1/jsbin/1453143967-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/04452fcc9c8aa994'}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
-_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList9', 'pages', null, document.getElementById('PageList9'), {'title': 'Pages - Menu', 'links': [{'href': 'http://simonwpframework-btemplates.blogspot.com/', 'title': 'Home', 'isCurrentPage': true}, {'href': 'http://simonwpframework-btemplates.blogspot.com/p/about.html', 'title': 'About', 'isCurrentPage': false}, {'href': 'http://simonwpframework-btemplates.blogspot.com/p/contact.html', 'title': 'Contact', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar1', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar1', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar1', null, document.getElementById('Label1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar2', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'sidebar2', null, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar2', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/2895759456-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/228702327-lightbox_bundle.css'}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header1', null, document.getElementById('Header1'), {}, 'displayModeFull'));
-</script>
 <script>
 $('.przyciski').mouseover(function() {
 $('.przyciskii').show(500);}).mouseleave(function() {
