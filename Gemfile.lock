@@ -31,7 +31,6 @@ GEM
     arel (3.0.2)
     bb-ruby (0.9.5)
     builder (3.0.3)
-    coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -114,7 +113,6 @@ PLATFORMS
 
 DEPENDENCIES
   bb-ruby (~> 0.9.5)
-  coderay (~> 1.0.7)
   coffee-rails (~> 3.2.1)
   jquery-rails
   pg
