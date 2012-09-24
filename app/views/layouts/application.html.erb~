@@ -241,9 +241,13 @@ code {
 font-size:11px;
 color:#066;
 letter-spacing:0;
-background-color:#0F9;
+/*background: url(bg_dotted.png) repeat scroll 0px 0px transparent;*/
+background: #F8F8F8;
 padding:2px;
+display:block;
+border-left: 5px solid #339900;
 }
+
 blockquote {
 font-style:italic;
 color:#333;
@@ -1211,8 +1215,6 @@ _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header
 <script>
 $('.przyciski').mouseover(function() {
 $('.przyciskii').show(500);}).mouseleave(function() {
-$('.przyciskii').hide("fast");
-  });
-
+$('.przyciskii').hide("fast");});
 </script>
 </body></html>
