@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.label :Tytuł_Artykułu%><br />
+    <%= f.text_field :title, :class => "artykul_tytul"  %>
+  </div>
+  <div class="kategoria_box">
+    <%= f.label :kategoria %><br />
+    <%= f.select(:kategoria, options_for_select([['NEWS', 'NEWS'], ['JAVA', 'JAVA'], ['HTML5', 'HTML5'], ['UBUNTU', 'UBUNTU']]), {}, {:class => "kategoria"}) %>
   </div>
   <div class="field">
-    <%= f.label :body %><br />
+    <%= f.label :Treść_Artykułu %><br />
     <%= f.text_area :body %>
   </div>
-  <div class="field">
-    <%= f.label :kategoria %><br />
-    <%= f.text_field :kategoria %>
-  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :value => "Aktualizuj Artykuł" %>
   </div>
 <% end %>
