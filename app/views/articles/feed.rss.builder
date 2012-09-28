@@ -1,18 +1,12 @@
-xml.instruct! :xml, :version => "1.0" 
-xml.rss :version => "2.0" do
-  xml.channel do
-    xml.title "Mosinski Blog"
-    xml.description "Zbiór doświadczeń studenta informatyki..."
-    xml.link articles_url
-
-    for article in @articles
-      xml.item do
-        xml.title article.title
-        xml.description article.body
-        xml.pubDate article.create_at.to_s(:rfc822)
-        xml.link article_url(article)
-        xml.guid article_url(article)
-      end
+atom_feed :language => 'en-US' do |feed|
+  feed.title "Mosinski Blog"
+  feed.updated @articles.first.accepted
+              
+  @articles.each do |article|
+    feed.entry article, :published => article.accepted do |entry|
+      entry.title article.title
+      entry.summary article.teaser + '<br /><br />Read the full article: <a href="' + article_url(article) + '">' + article_url(article) + '</a><br /><br />', :type => 'html'
+      
     end
   end
 end

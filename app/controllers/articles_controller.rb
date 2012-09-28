@@ -13,6 +13,8 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
+      format.atom     # index.atom.builder
+      format.xml  { render :xml => @articles }  
     end
   end
 
@@ -95,12 +97,10 @@ private
    end
 
 def feed
-    @articles = Article.all(:select => "title, body, kategoria, posted_at", :order => "create_at DESC", :limit => 20) 
-
-    respond_to do |format|
-      format.html
-      format.rss { render :layout => false } #index.rss.builder
-    end
+ @articles = Article.where(:state => ['3', '4']).order('accepted desc')
+  
+  respond_to do |format|
+    format.atom
+  end
 end
-
 end

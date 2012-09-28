@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html b:version="2" class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head>
+<html b:version="2" class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+<head>
+<%= auto_discovery_link_tag :atom, feed_path %>
 <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
 <meta content="width=1100" name="viewport">
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -967,8 +969,6 @@ margin-right:15px;
     box-shadow: 0px 0px 10px rgb(236, 236, 236) inset;
     height:120px;
 }
-
-
 --></style>
 </head>
 <body class="loading">
@@ -1038,8 +1038,9 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="widget-content">
 Witam na blogu poświęconym informatyce a głównie programowaniu.
 Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. To tyle miłej lektury.
-<%= auto_discovery_link_tag(:rss, "http://mosinskiblog.herokuapp.com") %>
-<link href="http://mosinskiblog.herokuapp.com" rel="alternate" title="RSS" type="application/rss+xml" />
+<a href="<%= feed_path %>">
+  <%= image_tag("feed.png", {:alt => 'Atom feed', :class=>"feed"}) %>Subscribe
+</a>
 </div>
 </div></div>
 </div>
