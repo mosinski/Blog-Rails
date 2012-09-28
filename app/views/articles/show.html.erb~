@@ -33,7 +33,7 @@
 <div class="user_info">
   <div class="field_single">
     <%= f.label :imię %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name%>
   </div>
   <div class="field_single">
     <%= f.label :email %><br />
@@ -42,8 +42,8 @@
 </div>
   <div class="field">
     <br /><br /><br />
-    <%= f.text_area :body, :rows => "5" %>
+    <%= f.text_area :body, :rows => "5", :class => "komentarz_body"%>
   </div><br />
-  <p><%= f.submit %></p>
+  <p><%= f.submit :value=>"Dodaj Komentarz" %></p>
 <% end %>
 </div>
