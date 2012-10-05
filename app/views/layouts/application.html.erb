@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html b:version="2" class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
 <head>
 <%= auto_discovery_link_tag :atom, feed_path %>
 <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
@@ -969,6 +968,22 @@ margin-right:15px;
     box-shadow: 0px 0px 10px rgb(236, 236, 236) inset;
     height:120px;
 }
+.bbcode_help_button{
+width: 22px;
+height: 22px;
+display: inline-block;
+cursor:pointer;
+}
+.obrazek{
+margin-left:-5px;
+margin-top:-6px;
+}
+.bbcode_help{
+margin-top:-25px;
+float:right;
+width:200px;
+height:20px;
+}
 --></style>
 </head>
 <body class="loading">
@@ -1038,9 +1053,7 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="widget-content">
 Witam na blogu poświęconym informatyce a głównie programowaniu.
 Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. To tyle miłej lektury.
-<a href="<%= feed_path %>">
-  <%= image_tag("feed.png", {:alt => 'Atom feed', :class=>"feed"}) %>Subscribe
-</a>
+<%= link_to feed_path do %> <%= image_tag "feed.png", alt: 'Atom feed', class: "feed" %> Subscribe <% end %> 
 </div>
 </div></div>
 </div>
@@ -1058,5 +1071,7 @@ Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framew
 $('.przyciski').mouseover(function() {
 $('.przyciskii').show(500);}).mouseleave(function() {
 $('.przyciskii').hide("fast");});
+$('.button_img').click(function () {
+$('.area_text').val( $('.area_text').val() + '[img]Adres Zdjęcia[/img]' );});
 </script>
 </body></html>

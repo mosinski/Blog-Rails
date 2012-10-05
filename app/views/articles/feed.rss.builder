@@ -1,6 +1,5 @@
 atom_feed :language => 'en-US' do |feed|
   feed.title "Mosinski Blog"
-  feed.updated @articles.first.accepted
               
   @articles.each do |article|
     feed.entry article, :published => article.accepted do |entry|

@@ -97,7 +97,7 @@ private
    end
 
 def feed
- @articles = Article.where(:state => ['3', '4']).order('accepted desc')
+ @articles = Article.all.order('accepted desc')
   
   respond_to do |format|
     format.atom
