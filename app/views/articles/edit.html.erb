@@ -1,6 +1,8 @@
 <br />
 
 <%= render 'form' %>
-
+<div class="bbcode_help">
+<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/img.png", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/youtube.jpg", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button' %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button' %>
+</div>
 <%= link_to 'Show', @article %> |
 <%= link_to 'Back', articles_path %>
