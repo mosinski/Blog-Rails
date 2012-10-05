@@ -33,7 +33,7 @@
 <div class="user_info">
   <div class="field_single">
     <%= f.label :imię %><br />
-    <%= f.text_field :name%>
+    <%= f.text_field :name %>
   </div>
   <div class="field_single">
     <%= f.label :email %><br />
