@@ -1071,7 +1071,32 @@ Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framew
 $('.przyciski').mouseover(function() {
 $('.przyciskii').show(500);}).mouseleave(function() {
 $('.przyciskii').hide("fast");});
-$('.button_img').click(function () {
-$('.area_text').val( $('.area_text').val() + '[img]Adres Zdjęcia[/img]' );});
+$('#przycisk_bold').click(function () {
+$('.area_text').val( $('.area_text').val()+'[b]Pogrubiony Teskt[/b]');
+});
+$('#przycisk_italic').click(function () {
+$('.area_text').val( $('.area_text').val()+'[i]Ukośny Tekst[/i]');
+});
+$('#przycisk_url').click(function () {
+$('.area_text').val( $('.area_text').val()+'[url=Adres Url]Tekst Linku[/url]');
+});
+$('#przycisk_cytat').click(function () {
+$('.area_text').val( $('.area_text').val()+'[quote=Źródło Cytatu]Tekst Cytatu[/quote]');
+});
+$('#przycisk_code').click(function () {
+$('.area_text').val( $('.area_text').val()+'[code]Kod programu[/code]');
+});
+$('#przycisk_img').click(function () {
+$('.area_text').val( $('.area_text').val()+'[img=size]Url Zdjęcia[/img]');
+});
+$('#przycisk_youtube').click(function () {
+$('.area_text').val( $('.area_text').val()+'[youtube]Url Filmiku Youtube[/youtube]');
+});
+$('#przycisk_list_num').click(function () {
+$('.area_text').val( $('.area_text').val()+'\n[ol]Lista\n[*]Numer 1\n[*]Numer 2[/ol]');
+});
+$('#przycisk_list_krop').click(function () {
+$('.area_text').val( $('.area_text').val()+'\n[ul]Lista\n[*]Kropka\n[*]Kropka[/ul]');
+});
 </script>
 </body></html>
