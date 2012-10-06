@@ -1,3 +1,4 @@
+<% title @article.title %>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 
  <div class="postdate">
@@ -29,6 +30,9 @@
   <%= render :partial => 'comment', :collection => @article.comments %> 
 </div>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+<div class="bbcode_help_comments">
+<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic' %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url' %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat' %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code' %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num' %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop' %>
+</div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
 <div class="user_info">
   <div class="field_single">

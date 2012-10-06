@@ -16,7 +16,7 @@
    <%= link_to 'Delete', article_comment_path(@article, comment), :confirm => 'Are you sure?', :method => :delete,:id => "comment-przyciski" %><br />
   </div>
        <div id="comment-body">
-  	<%= simple_format h comment.body %>
+  	<%= simple_format h comment.body.bbcode_to_html({}, true, :disable, :image, :youtube, :qvideo, :vimeo, :size).html_safe %>
 	</div>
   </div>
 </div>
