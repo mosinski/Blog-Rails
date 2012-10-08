@@ -1185,7 +1185,7 @@ $('.komentarz_body').val( $('.komentarz_body').val()+'[u]Podkreślony Tekst[/u]'
 });
 $('#przycisk_s').click(function () {
 $('.area_text').val( $('.area_text').val()+'[s]Przekreślony Tekst[/s]');
-$('.komentarz_body').val( $('.komentarz_body').val()+'[u]Przekreślony Tekst[/u]');
+$('.komentarz_body').val( $('.komentarz_body').val()+'[s]Przekreślony Tekst[/s]');
 });
 $('#przycisk_url').click(function () {
 $('.area_text').val( $('.area_text').val()+'[url=Adres Url]Tekst Linku[/url]');
