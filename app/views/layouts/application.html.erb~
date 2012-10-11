@@ -1084,6 +1084,14 @@ float:right;
 width:200px;
 height:20px;
 }
+.nk {
+margin-top: -33px;
+margin-left: 300px;
+}
+.google{
+margin-top: -26px;
+margin-left: 220px;
+}
 --></style>
 </head>
 <body class="loading">
@@ -1145,7 +1153,7 @@ Zbiór doświadczeń studenta Informatyki..
 <h2 class="sidebar-title">Kategorie</h2>
 <div class="widget-content">
 <script type="text/javascript">if(typeof jQuery == 'undefined'){document.write("<scr" + "ipt type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></scr" + "ipt>");}</script>
-<ul id="rssdata1" style=""><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=NEWS">NEWS</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA">C#</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA">JAVA</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=HTML5">HTML5</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=UBUNTU">UBUNTU</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=RUBY+ON+RAILS">RUBY ON RAILS</a></li></ul>
+<ul id="rssdata1" style=""><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=NEWS">NEWS</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=C#">C#</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA">JAVA</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=HTML5">HTML5</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=UBUNTU">UBUNTU</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=RUBY+ON+RAILS">RUBY ON RAILS</a></li></ul>
 </div>
 </div>
 <div class="widget HTML" id="HTML1">
@@ -1167,6 +1175,9 @@ Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framew
 <!-- Do Not Remove Our Link On Footer Template. Please Respect Our Work. Thank You. -->
 </div>
 </div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'pl'}
+</script>
 <script>
 $('.przyciski').mouseover(function() {
 $('.przyciskii').show(500);}).mouseleave(function() {
