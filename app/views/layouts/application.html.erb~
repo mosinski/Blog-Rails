@@ -10,7 +10,7 @@
 <![endif]-->
 <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
 <title>
-Mosinski Blog - <%= yield(:title) %><% if yield(:title) == '' %>Twoja Biblioteka Piosenek<% end %>
+Mosinski Blog<% if yield(:title) != '' %> - <%= yield(:title) %><% end %>
 </title>
   <%= javascript_include_tag "application" %>
 <style id="page-skin-1" type="text/css"><!--
@@ -1075,7 +1075,7 @@ margin-top:-6px;
 .bbcode_help{
 margin-top:-25px;
 float:right;
-width:200px;
+width:250px;
 height:20px;
 }
 .bbcode_help_comments{
@@ -1145,7 +1145,7 @@ Zbiór doświadczeń studenta Informatyki..
 <h2 class="sidebar-title">Kategorie</h2>
 <div class="widget-content">
 <script type="text/javascript">if(typeof jQuery == 'undefined'){document.write("<scr" + "ipt type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></scr" + "ipt>");}</script>
-<ul id="rssdata1" style=""><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=NEWS">NEWS</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA">JAVA</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=HTML5">HTML5</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=UBUNTU">UBUNTU</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=RUBY+ON+RAILS">RUBY ON RAILS</a></li></ul>
+<ul id="rssdata1" style=""><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=NEWS">NEWS</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA">C#</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA">JAVA</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=HTML5">HTML5</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=UBUNTU">UBUNTU</a></li><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=RUBY+ON+RAILS">RUBY ON RAILS</a></li></ul>
 </div>
 </div>
 <div class="widget HTML" id="HTML1">
