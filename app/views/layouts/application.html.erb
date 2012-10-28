@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-<%= auto_discovery_link_tag :atom, feed_path %>
 <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
 <meta content="width=1100" name="viewport">
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -1092,6 +1091,15 @@ margin-left: 300px;
 margin-top: -26px;
 margin-left: 215px;
 }
+.about{
+margin-top:100px;
+margin-left:30%;
+}
+.imie_nazwisko{
+margin-top:-110px;
+margin-left:150px;
+font-size:60px;
+line-height: 1;
 --></style>
 </head>
 <body class="loading">
@@ -1118,8 +1126,8 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="section" id="pages"><div class="widget PageList" id="PageList9">
 <div>
 <ul>
-<li class="page_item"><a href="http://mosinskiblog.herokuapp.com/">Home</a></li>
-<li class="page_item"><a href="http://mosinskiblog.herokuapp.com/">O mnie</a></li>
+<li class="page_item"><a href="/">Home</a></li>
+<li class="page_item"><a href="/about">O mnie</a></li>
 <li class="page_item"><a href="http://mosinskiblog.herokuapp.com/">Kontakt</a></li>
 </ul>
 </div>
@@ -1161,7 +1169,6 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="widget-content">
 Witam na blogu poświęconym informatyce a głównie programowaniu.
 Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. To tyle miłej lektury.
-<%= link_to feed_path do %> <%= image_tag "feed.png", alt: 'Atom feed', class: "feed" %> Subscribe <% end %> 
 </div>
 </div></div>
 </div>

@@ -61,5 +61,6 @@ end
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 match '/feed' => 'articles#feed.rss', :as => :feed, :defaults => { :format => 'atom' }
+match '/about' => 'articles#about'
 root :to => "articles#index"
 end
