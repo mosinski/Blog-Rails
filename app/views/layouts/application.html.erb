@@ -12,6 +12,7 @@
 Mosinski Blog<% if yield(:title) != '' %> - <%= yield(:title) %><% end %>
 </title>
   <%= javascript_include_tag "application" %>
+
 <style id="page-skin-1" type="text/css"><!--
 .navbar {
 visibility: hidden;
@@ -210,9 +211,6 @@ letter-spacing:0;
 background-color:#f3f3f3;
 }
 code {
-font-size:11px;
-color:#066;
-letter-spacing:0;
 /*background: url(bg_dotted.png) repeat scroll 0px 0px transparent;*/
 background: #F8F8F8;
 padding:2px 0px 0px 12px;
@@ -1100,12 +1098,53 @@ margin-top:-110px;
 margin-left:150px;
 font-size:60px;
 line-height: 1;
+}
+table.CodeRay {
+width: 100px;
+}
+
+.CodeRay {
+background-color: #232323;
+border: 1px solid black;
+font-family: 'Courier New', 'Terminal', monospace;
+color: #E6E0DB;
+padding: 3px 5px;
+overflow: auto;
+font-size: 12px;
+margin: 12px 0;
+}
+
+.CodeRay pre {
+margin: 0px;
+padding: 5px;
+}
+
+.CodeRay .an { color:#E7BE69 }                      /* html attribute */
+.CodeRay .c  { color:#BC9358; font-style: italic; } /* comment */
+.CodeRay .ch { color:#509E4F }                      /* escaped character */
+.CodeRay .cl { color:#FFF }                         /* class */
+.CodeRay .co { color:#FFF }                         /* constant */
+.CodeRay .fl { color:#A4C260 }                      /* float */
+.CodeRay .fu { color:#FFC56D }                      /* function */
+.CodeRay .gv { color:#D0CFFE }                      /* global variable */
+.CodeRay .i  { color:#A4C260 }                      /* integer */
+.CodeRay .il { background:#151515 }                 /* inline code */
+.CodeRay .iv { color:#D0CFFE }                      /* instance variable */
+.CodeRay .pp { color:#E7BE69 }                      /* doctype */
+.CodeRay .r  { color:#CB7832 }                      /* keyword */
+.CodeRay .rx { color:#A4C260 }                      /* regex */
+.CodeRay .s  { color:#A4C260 }                      /* string */
+.CodeRay .sy { color:#6C9CBD }                      /* symbol */
+.CodeRay .ta { color:#E7BE69 }                      /* html tag */
+.CodeRay .pc { color:#6C9CBD }                      /* boolean */
+td.line-numbers pre{ width:10px; font-size:12px; background:#339999;}
+td.line-numbers pre a { color:black; font-weight:bold;}
+td.code pre{ width:750px; font-size:12px; }
 --></style>
 </head>
 <body class="loading">
 <div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1">
 <div id="navbar-iframe-container"><iframe allowtransparency="true" hspace="0" marginheight="0" marginwidth="0" style="" tabindex="0" vspace="0" id="navbar-iframe" name="navbar-iframe" src="Simon%20WP%20Framework_pliki/navbar.html" frameborder="0" scrolling="no" width="100%"></iframe></div>
-
 </div></div>
 <div class="soften_edges light_navigation" id="options-wrapper">
 <div class="container_12" id="">

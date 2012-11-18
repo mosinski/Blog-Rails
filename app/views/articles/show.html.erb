@@ -13,7 +13,7 @@
 </div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-  <%= @article.body.bbcode_to_html_with_formatting.html_safe %>
+<%=raw textilize(coderay(@article.body)) %>
 </div>
 
 <div class="postmetadata">

@@ -40,3 +40,5 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem "bb-ruby", "~> 0.9.5"
 gem 'will_paginate'
+gem 'coderay'
+gem 'RedCloth'

@@ -13,7 +13,7 @@
 </div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-  <%= @article.body.bbcode_to_html_with_formatting.html_safe %>
+<%=raw textilize(coderay(@article.body).div(:line_numbers => :table)) %>
 </div>
 
 <div class="postmetadata">
@@ -21,7 +21,7 @@
 	<span class="time"><em>Ostatnia modyfikacja </em><%= @article.updated_at.strftime("%d-%m-%Y") %><em> przez </em><b>Miłosz Osiński</b></span>
 	</div>
 	<span class="categories">Kategoria: </span><%= @article.kategoria %>
-<div class='spread'><div class='twshare left'><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="funonrails">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><div class="fb_button" style="background:none;position: relative; top: -3px;"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" layout="button_count" show_faces="false" width="45" font=""></fb:like></div></div></div><div class="google"><div class="g-plusone" data-size="medium"></div></div><div class="nk"><script type="text/javascript">var nk_wg = ({content: null,host: "http://nk.pl/",image: "http://www.bigboystoys.pl/template/classic_bbt/gfx/widget/nk.png"});</script><script type="text/javascript" src="http://0.s-nk.pl/script/sledzik/widgets/sledzik_widget_shout"></script></div>
+<div class='spread'><div class='twshare left'><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="funonrails">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><div class="fb_button" style="background:none;position: relative; top: -3px;"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" layout="button_count" show_faces="false" width="45" font=""></fb:like></div></div></div><div class="google"><div class="g-plusone" data-size="medium"></div></div><div class="nk"><script type="text/javascript">var nk_wg = ({content: null,host: "http://nk.pl/",image: "http://mosinskiblog.herokuapp.com/nk.png"});</script><script type="text/javascript" src="http://0.s-nk.pl/script/sledzik/widgets/sledzik_widget_shout"></script></div>
 </div>
 </div>
 
