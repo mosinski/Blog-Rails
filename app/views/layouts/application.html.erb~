@@ -1114,7 +1114,7 @@ margin: 0px 0;
 
 .CodeRay pre {
 margin: 0px;
-padding: 0px;
+padding: 5px;
 }
 
 .CodeRay .an { color:#E7BE69 }                      /* html attribute */
