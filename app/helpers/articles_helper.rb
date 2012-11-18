@@ -1,9 +1,7 @@
 module ArticlesHelper
-  def coderay(text) 
-    text.gsub!(/\<code(?: lang="(.+?)")?\>(.+?)\<\/code\>/m) do 
-      code = CodeRay.scan($2, $1).div(:line_numbers => :table)
-      "<notextile>#{code}</notextile>" 
-    end 
-    return text.html_safe 
-  end
+  def coderay(text)  
+    text.gsub(/\<code( lang="(.+?)")?\>(.+?)\<\/code\>/m) do  
+      CodeRay.scan($3, $2).div(:line_numbers => :table) 
+    end  
+  end  
 end

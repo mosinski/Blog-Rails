@@ -1104,19 +1104,17 @@ width: 100px;
 }
 
 .CodeRay {
-background-color: #232323;
-border: 1px solid black;
 font-family: 'Courier New', 'Terminal', monospace;
 color: #E6E0DB;
 padding: 3px 5px;
 overflow: auto;
 font-size: 12px;
-margin: 12px 0;
+margin: 0px 0;
 }
 
 .CodeRay pre {
 margin: 0px;
-padding: 5px;
+padding: 0px;
 }
 
 .CodeRay .an { color:#E7BE69 }                      /* html attribute */
@@ -1137,7 +1135,7 @@ padding: 5px;
 .CodeRay .sy { color:#6C9CBD }                      /* symbol */
 .CodeRay .ta { color:#E7BE69 }                      /* html tag */
 .CodeRay .pc { color:#6C9CBD }                      /* boolean */
-td.line-numbers pre{ width:10px; font-size:12px; background:#339966;}
+td.line-numbers pre{ width:10px; font-size:12px; background:#339999;}
 td.line-numbers pre a { color:black; font-weight:bold;}
 td.code pre{ width:750px; font-size:12px; }
 --></style>
