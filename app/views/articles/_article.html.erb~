@@ -1,4 +1,3 @@
-require 'coderay'
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 
  <div class="postdate">
@@ -10,7 +9,7 @@ require 'coderay'
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
 <% if article.body.length > 500 %>
-  <%= article.body[0..500].bbcode_to_html_with_formatting.html_safe + "..."%>
+<%=raw textilize(coderay(@article.body[0..500]))+"..." %>
 <% else %>
 <%= article.body.bbcode_to_html_with_formatting.html_safe %>
 <% end %>
