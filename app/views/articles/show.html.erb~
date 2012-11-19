@@ -13,7 +13,7 @@
 </div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-<%=raw textilize(coderay(@article.body).div(:line_numbers => :table)) %>
+<%=raw textilize(coderay(@article.body)) %>
 </div>
 
 <div class="postmetadata">
