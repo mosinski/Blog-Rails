@@ -780,11 +780,12 @@ width: 40px;
 .post, .type-post, .type-page {
 padding: 20px 20px 10px 20px;
 margin: 15px 0px 15px 0px;
-background: #FFF;
+/* background: #FFF; */
 border: solid 1px #e3e3e3;
 -moz-box-shadow: inset 0 0 10px #f3f3f3;
 -webkit-box-shadow: inset 0 0 10px #f3f3f3;
 box-shadow: inset 0 0 10px #f3f3f3;
+background: url("http://www.ubuntu.com/sites/www.ubuntu.com/files/active/images/home-bkg.gif") repeat scroll 8px 12px rgb(255, 255, 255);
 }
 .post-administrator {
 padding: 20px 20px 10px 20px;
@@ -949,7 +950,6 @@ Zbiór doświadczeń studenta Informatyki..
 <ul>
 <li class="page_item"><a href="/">Home</a></li>
 <li class="page_item"><a href="/about">O mnie</a></li>
-<li class="page_item"><a href="http://mosinskiblog.herokuapp.com/">Kontakt</a></li>
 </ul>
 </div>
 </div>
