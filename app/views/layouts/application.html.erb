@@ -350,7 +350,6 @@ font-size: 10px;
 line-height: 18px;
 width: 755px;
 resize:none;
-height:100px;
 }
 #comment-przyciski{
 float:right;
@@ -922,6 +921,18 @@ margin: 0;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
+<script>
+	(function() {
+	  var id = 'nk-widget-sdk';
+	  var js, first_js = document.getElementsByTagName('script')[0];
+	  if (document.getElementById(id)) return;
+	  js = document.createElement('script');
+	  js.id = id; js.async = true;
+	  js.type = 'text/javascript';
+	  js.src = 'http://0.s-nk.pl/script/packs/nk_widgets_all.js';
+	  first_js.parentNode.insertBefore(js, first_js);
+	}());
+</script>
 <div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1">
 <div id="navbar-iframe-container"><iframe allowtransparency="true" hspace="0" marginheight="0" marginwidth="0" style="" tabindex="0" vspace="0" id="navbar-iframe" name="navbar-iframe" src="Simon%20WP%20Framework_pliki/navbar.html" frameborder="0" scrolling="no" width="100%"></iframe></div>
 </div></div>
@@ -1000,8 +1011,10 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="widget HTML" id="HTML1">
 <h2 class="sidebar-title">INFO</h2>
 <div class="widget-content">
+<div class="info-sidebar">
 Witam na blogu poświęconym informatyce a głównie programowaniu.
 Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. To tyle miłej lektury.
+</div>
 </div>
 </div>
 </div>
@@ -1016,9 +1029,13 @@ Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framew
 <!-- Do Not Remove Our Link On Footer Template. Please Respect Our Work. Thank You. -->
 </div>
 </div>
+<!-- Skrypty social buttons -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
   {lang: 'pl'}
 </script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="http://connect.facebook.net/pl_PL/all.js#xfbml=1"></script>
+<!-- Koniec social buttons -->
 <script>
 $('.przyciski').mouseover(function() {
 $('.przyciskii').show(500);}).mouseleave(function() {
