@@ -19,7 +19,7 @@
 <div class="postmetadata">
    <div class="meta">
 	<span class="time"><em>Ostatnia modyfikacja </em><%= @article.updated_at.strftime("%d-%m-%Y") %><em> przez </em><b>Miłosz Osiński</b></span>
-	</div>
+   </div>
 	<span class="categories">Kategoria: </span><%= @article.kategoria %>
 
 <div class="social_buttons">
@@ -37,6 +37,10 @@
  data-nk-image = "http://mosinskiblog.herokuapp.com/logo.png" data-nk-description = <%= @article.body[0..30] %> > </div>
 </div>
 </div>
+</div>
+<div class="następny_poprzedni">
+<%= link_to("< Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
+<%= link_to("Następny Artykuł >", @article.next_article) if @article.next_article %>
 </div>
 </div>
 
