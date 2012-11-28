@@ -17,7 +17,7 @@
 
 <div class="postmetadata">
    <div class="meta">
-	<span class="time"><em>Ostatnia modyfikacja </em><%= @article.updated_at.strftime("%H:%M %d-%m-%Y") %><em> przez </em><b>Miłosz Osiński</b></span>
+	<span class="time"><em>Ostatnia modyfikacja </em><%= article.updated_at.strftime("%H:%M %d-%m-%Y") %><em> przez </em><b>Miłosz Osiński</b></span>
    </div>
 <span class="categories">Kategoria: </span><%= article.kategoria %><span class="post-comments">Ilość komentarzy: </span><%= article.comments.count %>
 </div>
