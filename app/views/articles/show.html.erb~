@@ -38,8 +38,10 @@
 </div>
 </div>
 </div>
+<div class="następny_poprzedni">
 <%= link_to("< Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
 <%= link_to("Następny Artykuł >", @article.next_article) if @article.next_article %>
+</div>
 </div>
 
 <div id="comment-block">
