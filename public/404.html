@@ -1,26 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>The page you were looking for doesn't exist (404)</title>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>404 - Very ERROR</title>
   <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
+    body { background-color: #0102ac; color: #f4fef6; text-align: center; font-family: fixedsys, monospace; }
+    div.container{
+			padding: 200px 0 0 0;
+		}
+		div.top{
+			padding: 0 5px;
+			background: #b1adaa;
+			color: #0102ac;
+			width: 100px;
+			margin: 0 auto
+		}
+		div.dialog, div.list {
+     width: 700px;
+		 margin: 0 auto;
+		 text-align: left;
     }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+		div.list a{
+			color: white;
+		}
+		div.bottom{
+			width: 300px;
+			margin: auto;
+		}
+    div.bottom span{
+			text-decoration: blink;
+		}
   </style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+	$(document).click(function(){
+		history.go(-1);
+	});
+	
+	$(document).keypress(function(){
+		history.go(-1);
+	});
+	</script>
+	
 </head>
 
 <body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
-  </div>
-</body>
-</html>
+<div class="container">
+<div class="top">Mosinski Blog</div><br>
+<div class="dialog">Upss wystąpił błąd 404 możesz być z siebie dumny.<br> Strona której szukasz nie istnieje lub jest tymczasowo niedostępna.</div><br>
+<div class="list"><span>* &nbsp;</span> Naciśnij dowolny klawisz/lub kliknij aby wrócić.</div>
+<div class="list"><span>* &nbsp;</span> Kliknij w ten <a href="http://mosinskiblog.herokuapp.com/">link</a> aby wrócić do strony domowej.</div><br>
+<div class="bottom">Naciśnij dowolny klawisz aby kontynuować<span>_</span></div>
+</div>
+
+
+</body></html>
