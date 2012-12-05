@@ -1,0 +1,12 @@
+Witaj,<br>
+Napewno zainteresuję Cię informacja, że na Mosiński Blog<br>
+został umieszczony nowy artykuł:<br>
+<%= link_to @article.title, ("http://mosinskiblog.herokuapp.com/articles/" + @article.id.to_s) %><br><br>
+
+Anulowanie Subskrypcji:<br>
+<%= link_to "Chcę zrezygnować z subskrypcji", "http://mosinskiblog.herokuapp.com/zgloszenie/" %><br>
+<b>Indywidualny kod dostępu:</b> <%= @newsletter.kod_dostepu %><br>
+<br><br>
+Miłego czytania.<br>
+Pozdrawiam<br>
+<b>Miłosz Osiński</b>

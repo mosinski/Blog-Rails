@@ -134,11 +134,11 @@ float: left;
 text-shadow: 0px 1px 1px rgb(255, 255, 255);
 }
 #header h1 a {
-color: black;
+text-shadow: 0px 1px 0px rgb(255, 255, 255), 0px -1px 0px rgb(0, 0, 0);
+color: rgb(119, 119, 119);
 font-size:42px;
 letter-spacing:-2.5px;
 text-decoration: none;
-text-shadow: 0px 1px 1px rgb(255, 255, 255);
 }
 #header h1 a:hover {
 color: #333;
@@ -1014,6 +1014,15 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="info-sidebar">
 Witam na blogu poświęconym informatyce a głównie programowaniu.
 Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wiedza się przyda. To tyle miłej lektury.
+</div>
+</div>
+</div>
+<div class="widget HTML" id="HTML1">
+<h2 class="sidebar-title">Subskrypcja</h2>
+<div class="widget-content">
+<div class="info-sidebar">
+Chcesz dostawać informacje o nowych postach na swojego maila?
+Wpisz swojego maila i gotowe!
 </div>
 </div>
 </div>

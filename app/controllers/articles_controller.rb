@@ -49,9 +49,15 @@ class ArticlesController < ApplicationController
   # POST /articles.json
   def create
     @article = Article.new(params[:article])
-
+       
     respond_to do |format|
       if @article.save
+	@newsletters = Newsletter.all
+	if @newsletters != NIL
+ 	@newsletters.each do |newsletter|
+	NewsletterMailer.newsletter_sender(newsletter, @article).deliver
+	end
+        end
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
         format.json { render json: @article, status: :created, location: @article }
       else

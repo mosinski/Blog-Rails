@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  resources :newsletters
+
 resources :comments
 resources :articles do
   resources :comments
@@ -61,5 +63,8 @@ end
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 match '/feed' => 'articles#feed.rss', :as => :feed, :defaults => { :format => 'atom' }
+match '/about' => 'articles#about'
+match '/zgloszenie' => 'newsletters_#zgloszenie'
+match '/nie_zakladalem_konta' => 'users_#pomylka'
 root :to => "articles#index"
 end
