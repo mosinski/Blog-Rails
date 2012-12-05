@@ -903,6 +903,9 @@ margin: 0;
 #info_subskrypcja{
 width:320px
 }
+#newsletter_email{
+width:300px;
+}
 --></style>
 </head>
 <body class="loading">
@@ -1025,7 +1028,7 @@ Są na nim dziedziny z jakimi miałem styczność na studiach może komuś ta wi
 <div class="widget-content">
 <div class="info-sidebar" id="info_subskrypcja">
 Chcesz dostawać informacje o nowych postach na swojego maila?
-Wpisz swojego maila i gotowe!
+Wpisz adres i gotowe!
 <%= render :partial => "newsletters/subskrypcja" %>
 </div>
 </div>
