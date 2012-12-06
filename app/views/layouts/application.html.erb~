@@ -442,6 +442,17 @@ color: #333;
 font-family: Arial, Helvetica, Tahoma, sans-serif;
 width:175px;
 }
+.wyszukaj_nav{
+background:rgb(232,232,232);
+color: #333;
+font-family: Arial, Helvetica, Tahoma, sans-serif;
+}
+.wyszukaj_nav:focus{
+background:rgb(236,236,236);
+color: #333;
+font-family: Arial, Helvetica, Tahoma, sans-serif;
+}
+
 label {
 font-weight: bold;
 }
@@ -905,7 +916,21 @@ width:320px
 }
 #newsletter_email{
 width:300px;
+border-radius: 4px 4px 4px 4px;
+background:rgb(240,240,240);
 }
+#newsletter_email:focus{
+width:300px;
+background:rgb(236,236,236);
+border-radius: 4px 4px 4px 4px;
+}
+.notice{
+display: inline-block;
+margin-top: 14px;
+margin-left: 150px;
+font-size: 18px;
+}
+
 --></style>
 </head>
 <body class="loading">
@@ -973,6 +998,9 @@ Zbiór doświadczeń studenta Informatyki..
 </div>
 <!-- /Pages -->
 </div></div>
+<div class="notice">
+<%= notice %>
+</div>
 <div class="grid_3" id="search">
 <%= form_tag request.path, :method => 'get' do %>
 <div id="searching">
@@ -980,7 +1008,7 @@ Zbiór doświadczeń studenta Informatyki..
 <tbody>
 <tr>
 <td valign="middle" align="center">
-<%= text_field_tag  :search, params[:search], :placeholder => 'Wyszukaj:' %>
+<%= text_field_tag  :search, params[:search], :placeholder => 'Wyszukaj:', :class => 'wyszukaj_nav' %>
 <% end %></td>
 <td valign="middle" align="center"><input id="searchsubmit" value="Szukaj" type="submit"></td>
 </tr>

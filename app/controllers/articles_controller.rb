@@ -58,7 +58,7 @@ class ArticlesController < ApplicationController
 	NewsletterMailer.newsletter_sender(newsletter, @article).deliver
 	end
         end
-        format.html { redirect_to @article, notice: 'Article was successfully created.' }
+        format.html { redirect_to @article, notice: 'Dodano nowy artykul.' }
         format.json { render json: @article, status: :created, location: @article }
       else
         format.html { render action: "new" }
@@ -74,7 +74,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
-        format.html { redirect_to @article, notice: 'Article was successfully updated.' }
+        format.html { redirect_to @article, notice: 'Artykul zostal pomyslnie zaktualizowany.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
