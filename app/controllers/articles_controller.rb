@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
 
-   USER_ID, PASSWORD = "m1l05z", "mybl0g"
+   USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
  
    # Require authentication only for edit and delete operation
    before_filter :authenticate, :only => [ :new, :edit, :destroy ]

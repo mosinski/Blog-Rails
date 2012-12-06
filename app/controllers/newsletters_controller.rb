@@ -1,6 +1,6 @@
 class NewslettersController < ApplicationController
 
-  USER_ID, PASSWORD = "m1l05z", "mybl0g"
+  USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
   before_filter :authenticate, :only => [ :index ]
   # GET /newsletters
   # GET /newsletters.json
@@ -94,5 +94,12 @@ class NewslettersController < ApplicationController
     redirect_to articles_url, notice: 'Niepoprawny kod dostepu!'
    end
   end
+
+private
+   def authenticate
+      authenticate_or_request_with_http_basic do |id, password| 
+          id == USER_ID && password == PASSWORD
+      end
+   end
 
 end
