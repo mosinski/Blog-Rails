@@ -999,7 +999,11 @@ Zbiór doświadczeń studenta Informatyki..
 <!-- /Pages -->
 </div></div>
 <div class="notice">
+<% if notice != NIL %>
 <%= notice %>
+<% elsif @newsletter.errors != NIL %>
+<%= @newsletter.errors.full_messages %>
+<% end %>
 </div>
 <div class="grid_3" id="search">
 <%= form_tag request.path, :method => 'get' do %>

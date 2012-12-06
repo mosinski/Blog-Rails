@@ -1,7 +1,7 @@
 class NewslettersController < ApplicationController
 
   USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
-  before_filter :authenticate, :only => [ :index ]
+  before_filter :authenticate, :only => [ :index, :edit ]
   # GET /newsletters
   # GET /newsletters.json
   def index
@@ -51,8 +51,10 @@ class NewslettersController < ApplicationController
         format.html { redirect_to articles_url, notice: 'Dodano email do subskrypcji.' }
         format.json { render json: @newsletter, status: :created, location: @newsletter }
       else
-        format.html { render action: "new" }
+	@newsletter.errors.full_messages.each do |msg|
+        format.html { redirect_to articles_url, notice: msg }
         format.json { render json: @newsletter.errors, status: :unprocessable_entity }
+	end
       end
     end
   end

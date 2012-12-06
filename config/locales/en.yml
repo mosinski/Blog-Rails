@@ -2,6 +2,17 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%B %d, %Y"
+
+    day_names: [niedziela, poniedziałek, wtorek, środa, czwartek, piątek, sobota]
+    abbr_day_names: [nie, pon, wto, śro, czw, pia, sob]
+
+    month_names: [~, styczeń, luty, marzec, kwiecień, maj, czerwiec, lipiec, sierpień, wrzesień, październik, listopad, grudzień]
+    abbr_month_names: [~, sty, lut, mar, kwi, maj, cze, lip, sie, wrz, paź, lis, gru]
   hello: "Hello world"
   helpers:
     submit:
@@ -35,7 +46,7 @@ en:
       greater_than: musi być większe od %{count}
       greater_than_or_equal_to: musi być większe lub równe %{count}
       inclusion: nie znajduje się na liście dopuszczalnych wartości
-      invalid: jest nieprawidłowe
+      invalid: jest nieprawidłowy
       less_than: musi być mniejsze od %{count}
       less_than_or_equal_to: musi być mniejsze lub równe %{count}
       not_a_number: nie jest liczbą
@@ -122,8 +133,17 @@ en:
     errors:
       <<: *errors
   activerecord:
+    attributes:
+      user:
+        password:              'Hasło'
+        password_confirmation: 'Potwierdź Hasło'
+        current_password:      'Aktualne hasło'
+        username:              'Nazwa Użytkownika'
+        email:                 'E-mail'
+        remember_me:           'zapamiętaj mnie'
     errors:
       <<: *errors
+
   authlogic:
     error_messages:
       login_blank: "nie może być pusty"

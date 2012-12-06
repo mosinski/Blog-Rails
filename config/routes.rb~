@@ -65,6 +65,8 @@ end
 match '/feed' => 'articles#feed.rss', :as => :feed, :defaults => { :format => 'atom' }
 match '/about' => 'articles#about'
 match '/zgloszenie' => 'newsletters_#zgloszenie'
-match '/nie_zakladalem_konta' => 'users_#pomylka'
+match '/rezygnuje_z_subskrypcji' => 'newsletters_#rezygnuje'
+match '/newsletters/new' => 'articles#index'
+match 'newsletters#edit' => 'articles#index'
 root :to => "articles#index"
 end
