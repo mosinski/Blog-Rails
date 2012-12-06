@@ -1,4 +1,7 @@
 class NewslettersController < ApplicationController
+
+  USER_ID, PASSWORD = "m1l05z", "mybl0g"
+  before_filter :authenticate, :only => [ :index ]
   # GET /newsletters
   # GET /newsletters.json
   def index

@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Email</th>
+    <th>Kod Dostępu</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +12,7 @@
 <% @newsletters.each do |newsletter| %>
   <tr>
     <td><%= newsletter.email %></td>
+    <td><%= newsletter.kod_dostepu %></td>
     <td><%= link_to 'Show', newsletter %></td>
     <td><%= link_to 'Edit', edit_newsletter_path(newsletter) %></td>
     <td><%= link_to 'Destroy', newsletter, confirm: 'Are you sure?', method: :delete %></td>
