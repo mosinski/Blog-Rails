@@ -263,6 +263,7 @@ margin: 15px 0px 0px 0px;
 #sidebar ul li {
 padding: 0px 0px 5px 0px;
 margin: 0px;
+border-left: 5px solid rgb(119, 119, 119);
 width:150px;
 }
 #sidebar ul li:hover {
