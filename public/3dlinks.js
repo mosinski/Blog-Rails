@@ -17,4 +17,4 @@ function linkify( selector ) {
     }
 }
 
-linkify( '#sidebar ul li' );
+linkify( '.sidebarlinki' );
