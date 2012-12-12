@@ -261,16 +261,16 @@ padding: 0px 0px 0px 0px;
 margin: 15px 0px 0px 0px;
 }
 #sidebar ul li {
-padding: 0px 0px 5px 0px;
+padding: 0px 0px 5px 12px;
 margin: 0px;
-border-left: 5px solid rgb(119, 119, 119);
-width:150px;
+border-left: 5px solid transparent;
+width:250px;
 }
 #sidebar ul li:hover {
 padding: 0px 0px 5px 12px;
 margin: 0px;
 border-left: 5px solid rgb(153, 203, 220);
-width:150px;
+width:250px;
 }
 #sidebar #h3 {
 padding: 20px;
