@@ -1100,7 +1100,7 @@ Zbiór doświadczeń studenta Informatyki..
 <ul id="rssdata1" style="">
 <li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=NEWS" class="sidebarlinki">NEWS (<%= Article.find_all_by_kategoria("NEWS").count %>)</a></li>
 <li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=C%23" class="sidebarlinki">C# Microsoft Visual Studio '12 (<%= Article.find_all_by_kategoria("C#").count %>)</a></li
-><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=JAVA" class="sidebarlinki">JAVA (<%= Article.find_all_by_kategoria("JAVA").count %>)</a></li>
+><li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=ANDROID" class="sidebarlinki">ANDROID (<%= Article.find_all_by_kategoria("JAVA").count %>)</a></li>
 <li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=HTML5" class="sidebarlinki">HTML5 (<%= Article.find_all_by_kategoria("HTML5").count %>)</a></li>
 <li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=UBUNTU" class="sidebarlinki">UBUNTU (<%= Article.find_all_by_kategoria("UBUNTU").count %>)</a></li>
 <li><a href="http://mosinskiblog.herokuapp.com/articles?utf8=%E2%9C%93&search=RUBY+ON+RAILS" class="sidebarlinki">RUBY ON RAILS (<%= Article.find_all_by_kategoria("RUBY ON RAILS").count %>)</a></li>
