@@ -241,7 +241,7 @@ font-style:italic;
 color:#333;
 margin:5px;
 padding: 10px 10px 0px 30px;
-background: url(http://1.bp.blogspot.com/-8XMqyRJkgH8/T9EVSqVZq1I/AAAAAAAAC4I/uJx7xdgMSJ8/s000/quotes.jpg) no-repeat top left;
+background: url(http://mosinskiblog.herokuapp.com/quotes.jpg) no-repeat top left;
 }
 em {
 font-style:italic;
@@ -1175,11 +1175,11 @@ $('.area_text').val( $('.area_text').val()+'[quote=Źródło Cytatu]Tekst Cytatu
 $('.komentarz_body').val( $('.komentarz_body').val()+'[quote=Źródło Cytatu]Tekst Cytatu[/quote]');
 });
 $('#przycisk_code').click(function () {
-$('.area_text').val( $('.area_text').val()+'[code]Kod programu[/code]');
+$('.area_text').val( $('.area_text').val()+'<code lang="jezyk">Kod programu</code>');
 $('.komentarz_body').val( $('.komentarz_body').val()+'[code]Kod programu[/code]');
 });
 $('#przycisk_img').click(function () {
-$('.area_text').val( $('.area_text').val()+'[img=size]Url Zdjęcia[/img]');
+$('.area_text').val( $('.area_text').val()+'<img src="Url Zdjęcia" width="dlugosc" hight="wysokość">');
 });
 $('#przycisk_youtube').click(function () {
 $('.area_text').val( $('.area_text').val()+'[youtube]Url Filmiku Youtube[/youtube]');
