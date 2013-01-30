@@ -39,8 +39,8 @@
 </div>
 </div>
 <div class="następny_poprzedni">
-<%= link_to("< Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
-<%= link_to("Następny Artykuł >", @article.next_article) if @article.next_article %>
+<%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
+<%= link_to("Następny Artykuł »", @article.next_article) if @article.next_article %>
 </div>
 </div>
 
@@ -50,7 +50,7 @@
 </div>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 <div class="bbcode_help_comments">
-<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic' %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url' %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat' %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code' %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num' %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop' %>
+<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold", "title" => "Pogrubienie" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic' %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url' %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat' %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code' %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num' %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop' %>
 </div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
 <div class="user_info">

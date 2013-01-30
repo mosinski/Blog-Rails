@@ -242,6 +242,7 @@ color:#333;
 margin:5px;
 padding: 10px 10px 0px 30px;
 background: url(http://mosinskiblog.herokuapp.com/quotes.jpg) no-repeat top left;
+width: 620px;
 }
 em {
 font-style:italic;
@@ -1093,8 +1094,8 @@ $('.area_text').val( $('.area_text').val()+'<a href="Adres Url">Tekst Linku</a>'
 $('.komentarz_body').val( $('.komentarz_body').val()+'[url=Adres Url]Tekst Linku[/url]');
 });
 $('#przycisk_cytat').click(function () {
-$('.area_text').val( $('.area_text').val()+'[quote=Źródło Cytatu]Tekst Cytatu[/quote]');
-$('.komentarz_body').val( $('.komentarz_body').val()+'[quote=Źródło Cytatu]Tekst Cytatu[/quote]');
+$('.area_text').val( $('.area_text').val()+'[quote]Tekst Cytatu[/quote]');
+$('.komentarz_body').val( $('.komentarz_body').val()+'[quote]Tekst Cytatu[/quote]');
 });
 $('#przycisk_code').click(function () {
 $('.area_text').val( $('.area_text').val()+'<code lang="jezyk">Kod programu</code>');
