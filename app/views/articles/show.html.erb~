@@ -27,13 +27,13 @@
 <div class='twshare left'>
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="funonrails">Tweet</a>
 <div class="fb_button" style="background:none;position: relative; top: -2.5px; left: -10px;">
-<fb:like href="" layout="button_count" show_faces="false" width="45" font=""></fb:like>
+<fb:like href="http://blog.m1l05z.pl/articles/"+@article.id layout="button_count" show_faces="false" width="45" font=""></fb:like>
 </div></div></div>
 <div class="google">
  <div class="g-plusone" data-size="medium" ></div>
 </div>
 <div class="nk">
-<div class = "nk-fajne" data-nk-url = "http://mosinskiblog.herokuapp.com" data-nk-type = "3" data-nk-color = "0" data-nk-title = <%= @article.title %>
+<div class = "nk-fajne" data-nk-url = "http://blog.m1l05z.pl" data-nk-type = "3" data-nk-color = "0" data-nk-title = <%= @article.title %>
  data-nk-image = "http://mosinskiblog.herokuapp.com/logo.png" data-nk-description = <%= @article.body[0..30] %> > </div>
 </div>
 </div>
@@ -50,7 +50,7 @@
 </div>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 <div class="bbcode_help_comments">
-<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold", "title" => "Pogrubienie" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic' %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url' %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat' %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code' %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num' %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop' %>
+<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold", "title" => "Pogrubienie" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic', "title" => "Kursywa" %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u", "title" => "Podkreślenie" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s", "title" => "Przekreślenie" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url', "title" => "Link" %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat', "title" => "Cytat" %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code', "title" => "Fragment Kodu" %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num', "title" => "Lista Numeryczna" %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop', "title" => "Lista Kropkowa" %>
 </div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
 <div class="user_info">
