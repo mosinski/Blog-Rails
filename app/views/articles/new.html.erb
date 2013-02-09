@@ -2,10 +2,7 @@
 <%= form_for(@article) do |f| %>
 <%= render partial: 'form', locals: { f: f } %>
   <div class="actions">
-    <%= f.submit :value => "Dodaj Artykuł" %>
-<%= button_tag(:type => 'button') do %>
-  <% link_to 'Wróć', articles_path %>
-<% end %>
+    <%= f.submit :value => "Dodaj Artykuł" %><%= button_tag "Powrót",:type => 'button',:class => 'button',:onclick => "location.href = '#{articles_path}'" %>
   </div>
 <% end %>
 <div class="bbcode_help">
