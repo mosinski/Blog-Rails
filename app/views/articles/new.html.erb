@@ -2,7 +2,7 @@
 <%= form_for(@article) do |f| %>
 <%= render partial: 'form', locals: { f: f } %>
   <div class="actions">
-    <%= f.submit :value => "Dodaj Artykuł" %><%= button_tag 'Back', articles_path %>
+    <%= f.submit :value => "Dodaj Artykuł" %><%= button_to 'Back', articles_path %>
   </div>
 <% end %>
 <div class="bbcode_help">
