@@ -3,7 +3,7 @@
 	<% if  (@article.errors.count)==1  %>
       <h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu jednego błędu</h2>
     	<% elsif (@article.errors.count)>1 %>
-	<h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu <%= @user.errors.count %> błędów</h2>
+	<h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu <%= @article.errors.count %> błędów</h2>
     	<% end %>
       <ul>
       <% @article.errors.full_messages.each do |msg| %>
