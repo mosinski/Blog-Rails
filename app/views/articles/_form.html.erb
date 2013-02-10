@@ -7,7 +7,7 @@
     	<% end %>
       <ul>
       <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <li><div class="alert-error"><%= msg %></div></li>
       <% end %>
       </ul>
     </div>
