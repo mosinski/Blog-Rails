@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
  
    # Require authentication only for edit and delete operation
-   before_filter :authenticate, :only => [ :edit, :delete ]
+   before_filter :authenticate, :only => [ :edit, :delete,:index ]
 
   # GET /comments
   # GET /comments.json

@@ -1,29 +1,25 @@
-<h1>Listing comments</h1>
-
-<table>
-  <tr>
-    <th>Article</th>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<h1>Lista Komentarzy</h1>
+<br><br>
 <% @comments.each do |comment| %>
-  <tr>
-    <td><%= comment.article_id %></td>
-    <td><%= comment.name %></td>
-    <td><%= comment.email %></td>
-    <td><%= comment.body %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<% if comment.email  == "mylosz@yahoo.pl" %>
+<div class="post-administrator" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+<% else %>
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Comment', new_comment_path %>
+<div class="comment">
+  <div class="comment_avatar">
+  <div class="comment_left">
+  <%= image_tag avatar_url(comment) %>
+  </div>
+  </div>
+  <div class="comment_right">
+  <div class="comment_info">
+  <b><%=h comment.name %></b> <%= comment.created_at.strftime("%d.%m.%y %H:%M")%>
+  </div>
+       <div id="comment-body">
+  	<%= simple_format h comment.body.bbcode_to_html({}, true, :disable, :image, :youtube, :qvideo, :vimeo, :size).html_safe %>
+	</div>
+  </div>
+</div>
+</div>
+<% end %>
