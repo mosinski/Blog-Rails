@@ -67,6 +67,6 @@ match '/about' => 'articles#about'
 match '/zgloszenie' => 'newsletters_#zgloszenie'
 match '/rezygnuje_z_subskrypcji' => 'newsletters_#rezygnuje'
 match '/newsletters/new' => 'articles#index'
-match '404' => 'articles#404'
+match '/404' => 'articles#404'
 root :to => "articles#index"
 end
