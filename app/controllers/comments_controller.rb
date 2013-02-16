@@ -1,9 +1,7 @@
 class CommentsController < ApplicationController
 
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
- 
-   # Require authentication only for edit and delete operation
-   before_filter :authenticate, :only => [ :edit, :delete ]
+
 
   # GET /comments
   # GET /comments.json
@@ -41,6 +39,10 @@ class CommentsController < ApplicationController
   # GET /comments/1/edit
   def edit
     @comment = Comment.find(params[:id])
+    if @comment.ip == request.remote_ip
+    elsif
+    redirect_to(@article, :notice => 'Nie masz uprawnien.')
+    end
   end
 
   # POST /comments
@@ -48,6 +50,7 @@ class CommentsController < ApplicationController
 def create
   @article = Article.find(params[:article_id])
     @comment = @article.comments.build(params[:comment])
+    @comment.ip = request.remote_ip
     respond_to do |format|
       if @comment.save
         format.html { redirect_to(@article, :notice => 'Komentarz dodany') }
@@ -80,12 +83,18 @@ def update
 def destroy
     @comment = Comment.find(params[:id])
     @article = Article.find(params[:article_id])
-    @comment.destroy
 
+    if @comment.ip == request.remote_ip
+    @comment.destroy
+    
     respond_to do |format|
       format.html { redirect_to(@article, :notice => 'Comment was successfully deleted.') }
       format.xml  { head :ok }
     end
+    else 
+    redirect_to(@article, :notice => 'Nie masz uprawnien.')
+    end
+
   end
 
 private
