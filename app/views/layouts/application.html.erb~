@@ -963,8 +963,8 @@ margin: 0;
 <div class="description">
 Zbiór doświadczeń studenta Informatyki..
 </div>
-<div class="fb-like" data-href="http://mosinskiblog.herokuapp.com/" data-send="false" data-layout="box_count" data-width="650" data-show-faces="true" data-font="trebuchet ms"></div>
-<div class="twitter-glowna"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mosinskiblog.herokuapp.com/" data-via="Blog Informatyczny - Mosinski Blog" data-lang="pl" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a></div>
+<div class="fb-like" data-href="http://blog.m1l05z.pl/" data-send="false" data-layout="box_count" data-width="650" data-show-faces="true" data-font="trebuchet ms"></div>
+<div class="twitter-glowna"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.m1l05z.pl" data-via="Blog Informatyczny - Mosinski Blog" data-lang="pl" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a></div>
 <div class="g-plusone" data-size="tall"></div>
 </div>
 </div>
@@ -1053,7 +1053,7 @@ Wpisz adres i gotowe!
 <!-- Do Not Remove Our Link On Footer Template. Please Respect Our Work. Thank You. -->
 <div id="footer">
 <div style="clear: both"></div>
-        © <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>
+        © <%= Time.now.year %>
 Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framework/" target="_new">Simon WP Framework</a> | Converted by <a href="http://www.litethemes.com/" target="_blank" title="LiteThemes.com">LiteThemes.com</a>
 </div>
 <span style="margin:5px;"><a href="http://www.nosoftwarepatents.com/"><img src="http://ubuntu.pl/img/no_patents.gif" alt="" height="15" width="80"></a></span>
