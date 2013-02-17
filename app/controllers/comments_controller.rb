@@ -39,7 +39,7 @@ class CommentsController < ApplicationController
   # GET /comments/1/edit
   def edit
     @comment = Comment.find(params[:id])
-    if @comment.ip == request.remote_ip
+    if (@comment.ip != nil)&&(@comment.ip == request.remote_ip)
     elsif
     redirect_to(@article, :notice => 'Nie masz uprawnien.')
     end

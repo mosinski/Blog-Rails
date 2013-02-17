@@ -1,8 +1,7 @@
 class CommentsController < ApplicationController
 
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
- 
-   # Require authentication only for edit and delete operation
+
 
   # GET /comments
   # GET /comments.json
@@ -40,7 +39,7 @@ class CommentsController < ApplicationController
   # GET /comments/1/edit
   def edit
     @comment = Comment.find(params[:id])
-    if @comment.ip == request.remote_ip
+    if (@comment.ip != nil)&&(@comment.ip == request.remote_ip)
     elsif
     redirect_to(@article, :notice => 'Nie masz uprawnien.')
     end
