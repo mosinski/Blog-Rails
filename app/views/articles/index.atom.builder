@@ -8,7 +8,7 @@ atom_feed do |feed|
       entry.content article.body, :type => 'html'
 
       entry.author do |author|
-        author.name article.author
+        author.name "Miłosz Osiński"
       end
     end
   end
