@@ -919,9 +919,6 @@ padding: 0 4px 5px;
 margin: 0;
 }
 --></style>
-</head>
-<body class="loading">
-<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -929,15 +926,10 @@ margin: 0;
   js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=292604074183737";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script type="text/javascript">
-  window.___gcfg = {lang: 'pl'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'pl'}
 </script>
 <script>
 	(function() {
@@ -951,6 +943,9 @@ margin: 0;
 	  first_js.parentNode.insertBefore(js, first_js);
 	}());
 </script>
+</head>
+<body class="loading">
+<div id="fb-root"></div>
 <div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1">
 <div id="navbar-iframe-container"><iframe allowtransparency="true" hspace="0" marginheight="0" marginwidth="0" style="" tabindex="0" vspace="0" id="navbar-iframe" name="navbar-iframe" src="Simon%20WP%20Framework_pliki/navbar.html" frameborder="0" scrolling="no" width="100%"></iframe></div>
 </div></div>
