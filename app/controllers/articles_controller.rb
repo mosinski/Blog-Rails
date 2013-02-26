@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
  
    # Require authentication only for edit and delete operation
-   before_filter :authenticate, :only => [ :new, :edit, :destroy ]
+   #before_filter :authenticate, :only => [ :new, :edit, :destroy ]
 
   # GET /articles
   # GET /articles.json
@@ -22,6 +22,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @article = Article.find(params[:id])
+    @article.body = coderay(@article.body)
 
     respond_to do |format|
       format.html # show.html.erb
