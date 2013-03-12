@@ -5,7 +5,7 @@ atom_feed do |feed|
   @articles.each do |article|
     feed.entry article do |entry|
       entry.title article.title
-      entry.content article.body, :type => 'html'
+      entry.content simple_format(article.body[0..200]), :type => 'html'
 
       entry.author do |author|
         author.name "Miłosz Osiński"
