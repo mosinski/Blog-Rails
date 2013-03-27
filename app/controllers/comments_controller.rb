@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
 
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
+   before_filter :authenticate, :only => [ :show ]
 
 
   # GET /comments

@@ -13,7 +13,7 @@
 </div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-<%= sanitize @article.body.to_str.html_safe %>
+<%= sanitize @article.body %>
 </div>
 
 <div class="postmetadata">
