@@ -1,7 +1,6 @@
 class CommentsController < ApplicationController
 
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
-   before_filter :authenticate, :only => [ :show ]
 
 
   # GET /comments
@@ -85,7 +84,7 @@ def destroy
     @comment = Comment.find(params[:id])
     @article = Article.find(params[:article_id])
 
-
+    if @comment.ip == request.remote_ip
     @comment.destroy
     
     respond_to do |format|

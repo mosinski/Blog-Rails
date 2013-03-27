@@ -85,14 +85,16 @@ def destroy
     @comment = Comment.find(params[:id])
     @article = Article.find(params[:article_id])
 
-
+    if @comment.ip == request.remote_ip
     @comment.destroy
     
     respond_to do |format|
       format.html { redirect_to(@article, :notice => 'Comment was successfully deleted.') }
       format.xml  { head :ok }
     end
-
+    else 
+    redirect_to(@article, :notice => 'Nie masz uprawnien.')
+    end
 
   end
 
