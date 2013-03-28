@@ -63,7 +63,7 @@ def create
       end
     end
    else
-    redirect_to(@article, :notice => 'B&#322&#281dny dzie&#324 tygodnia.')
+    redirect_to(@article, :notice => 'Podano bledny dzien tygodnia.')
    end
   end
 
