@@ -49,9 +49,6 @@
   <%= render :partial => 'comment', :collection => @article.comments %> 
 </div>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
-<div class="bbcode_help_comments">
-<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold", "title" => "Pogrubienie" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic', "title" => "Kursywa" %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u", "title" => "Podkreślenie" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s", "title" => "Przekreślenie" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url', "title" => "Link" %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat', "title" => "Cytat" %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code', "title" => "Fragment Kodu" %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num', "title" => "Lista Numeryczna" %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop', "title" => "Lista Kropkowa" %>
-</div>
 <%= form_for([@article, @article.comments.build]) do |f| %>
 <div class="user_info">
   <div class="field_single">
@@ -62,6 +59,10 @@
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
+  <div class="field_single">
+    <%= f.label :Jaki_dziś_dzień_tygodnia? %><br />
+    <%= text_field_tag :dzien_tygodnia %>
+  </div>
 </div>
   <div class="field">
     <br /><br /><br />
@@ -69,4 +70,7 @@
   </div><br />
   <p><%= f.submit :value=>"Dodaj Komentarz", "rel"=>"nofollow" %></p>
 <% end %>
+<div class="bbcode_help_comments">
+<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold", "title" => "Pogrubienie" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic', "title" => "Kursywa" %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u", "title" => "Podkreślenie" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s", "title" => "Przekreślenie" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url', "title" => "Link" %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat', "title" => "Cytat" %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code', "title" => "Fragment Kodu" %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num', "title" => "Lista Numeryczna" %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop', "title" => "Lista Kropkowa" %>
+</div>
 </div>

@@ -50,6 +50,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
 def create
   @article = Article.find(params[:article_id])
+   if ((params[:dzien_tygodnia]).downcase! == (I18n.l Time.now, :format => "%A"))
     @comment = @article.comments.build(params[:comment])
     @comment.ip = request.remote_ip
     respond_to do |format|
@@ -61,6 +62,9 @@ def create
         format.xml  { render :xml => @comment.errors, :status => :unprocessable_entity }
       end
     end
+   else
+    redirect_to(@article, :notice => 'B&#322&#281dny dzie&#324 tygodnia.')
+   end
   end
 
   # PUT /comments/1
@@ -85,16 +89,13 @@ def destroy
     @comment = Comment.find(params[:id])
     @article = Article.find(params[:article_id])
 
-    if @comment.ip == request.remote_ip
     @comment.destroy
     
     respond_to do |format|
       format.html { redirect_to(@article, :notice => 'Comment was successfully deleted.') }
       format.xml  { head :ok }
     end
-    else 
-    redirect_to(@article, :notice => 'Nie masz uprawnien.')
-    end
+
 
   end
 

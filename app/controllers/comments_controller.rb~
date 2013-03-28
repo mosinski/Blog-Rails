@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
 
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
+   before_filter :authenticate, :only => [ :show ]
 
 
   # GET /comments
@@ -49,6 +50,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
 def create
   @article = Article.find(params[:article_id])
+   if ((params[:dzien_tygodnia]).downcase! == (I18n.l Time.now, :format => "%A"))
     @comment = @article.comments.build(params[:comment])
     @comment.ip = request.remote_ip
     respond_to do |format|
@@ -60,6 +62,9 @@ def create
         format.xml  { render :xml => @comment.errors, :status => :unprocessable_entity }
       end
     end
+   else
+    redirect_to(@article, :notice => 'B&#322&#281dny dzie&#324 tygodnia.')
+   end
   end
 
   # PUT /comments/1

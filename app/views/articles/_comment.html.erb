@@ -16,10 +16,10 @@
   <% else %>
   <b><%=h comment.name %></b> <font class="koment_czas"><%= time_ago_in_words(comment.created_at) + ' temu' %></font>
   <% end %>
-<% if comment.ip == request.remote_ip %>
+
 <%= link_to image_tag("delete.gif"), article_comment_path(@article, comment), :confirm => 'Usunąć komentarz?', :method => :delete,:id => "comment-przyciski" %> 
 <%= link_to image_tag("edit.png"), edit_article_comment_path(@article, comment),:id => "comment-przyciski" %>
-<% end %>
+
   </div>
        <div id="comment-body">
   	<%= simple_format h comment.body.bbcode_to_html({}, true, :disable, :image, :youtube, :qvideo, :vimeo, :size).html_safe %>
