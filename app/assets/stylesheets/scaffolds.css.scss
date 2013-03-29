@@ -439,16 +439,17 @@ position:absolute;
 top:30px;
 left:200px;
 }
-.twitter-glowna{
-display:block;
-position:absolute;
-top:30px;
-right:350px;
+.twitter-glowna {
+    display: inline-block;
+    position: relative;
+    top: 33px;
+    left: 210px;
 }
 #___plusone_0{
-position:absolute;
-top:30px;
-right:280px;
+    display: inline-block;
+    position: relative;
+    top: 32px;
+    left: 220px;
 }
 .info-sidebar{
 width:250px;
@@ -586,4 +587,12 @@ margin-right:320px;
 }
 .subskrypcja_rss :hover{
 margin-top: -2px;
+}
+.v9 {
+    background: white;
+    height: 35px;
+    width: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
