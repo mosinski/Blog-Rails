@@ -956,12 +956,7 @@ margin: 0;
 <div class="container_12" id="">
 <div class="container_12" id="header">
 <div class="section" id="header1"><div class="widget Header" id="Header1">
-<h1>
-<a href="">Mosiński Blog</a>
-</h1>
-<div class="description">
-Zbiór doświadczeń studenta Informatyki..
-</div>
+<a href=""><img src="/logo2.png" style="margin-top:-50px;margin-bottom:-30px;"></a>
 <div class="fb-like" data-href="http://blog.m1l05z.pl/" data-send="false" data-layout="box_count" data-width="650" data-show-faces="true" data-font="trebuchet ms"></div>
 <div class="twitter-glowna"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.m1l05z.pl" data-via="Blog Informatyczny - Mosinski Blog" data-lang="pl" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a></div>
 <div class="g-plusone" data-size="tall" data-href="http://blog.m1l05z.pl"></div>
@@ -1059,7 +1054,6 @@ Wpisz adres i gotowe!
 <div id="footer">
 <div style="clear: both"></div>
         © <%= Time.now.year %> Miłosz Osiński | Powered By <a href="http://simonwebdesign.com/simon-wp-framework/" target="_new">Simon WP Framework</a> | Converted by <a href="http://www.litethemes.com/" target="_blank" title="LiteThemes.com">LiteThemes.com</a>
-<a href="#top" style="float:right;">Back to Top</a>
 </div>
 <span style="margin:5px;"><a href="http://www.nosoftwarepatents.com/"><img src="http://ubuntu.pl/img/no_patents.gif" alt="" height="15" width="80"></a></span>
 <span style="margin:5px"><a href="http://www.bykom-stop.avx.pl/"><img src="http://ubuntu.pl/img/bykom_stop.gif" alt="" height="15" width="80"></a></span>
