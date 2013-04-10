@@ -1,4 +1,3 @@
-<% @dzis = I18n.l Time.now, :format => "%A" %>
 <% title @article.title %>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 
@@ -14,7 +13,7 @@
 </div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-<%= sanitize @article.body %>
+<%= sanitize @article.body.bbcode_to_html({}, true, :disable, :image, :vimeo, :size) %>
 </div>
 
 <div class="postmetadata">
