@@ -13,7 +13,7 @@
 </div>
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-<%= sanitize @article.body.bbcode_to_html({}, true, :disable, :image, :vimeo, :size) %>
+<%= sanitize @article.body %>
 </div>
 
 <div class="postmetadata">
@@ -37,6 +37,7 @@
  data-nk-image = "http://mosinskiblog.herokuapp.com/logo.png" data-nk-description = <%= @article.body[0..30] %> > </div>
 </div>
 </div>
+<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :style => "float:left;"), article_path(@article, :format => 'pdf') %>
 </div>
 <div class="następny_poprzedni">
 <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
@@ -48,7 +49,7 @@
 <h3 id="comments-title"><%= @article.comments.count %></h3>
   <%= render :partial => 'comment', :collection => @article.comments %> 
 </div>
-<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope" id="post_hentry">
 <%= form_for([@article, @article.comments.build]) do |f| %>
 <div class="user_info">
   <div class="field_single">

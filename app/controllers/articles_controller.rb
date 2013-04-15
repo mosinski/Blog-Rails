@@ -27,6 +27,13 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @article }
+      format.pdf {
+      html = render_to_string(:layout => false , :action => "show.html.erb", :formats => [:html], :handler => [:erb])
+      kit = PDFKit.new(html)	
+      kit.stylesheets << "#{Rails.root}/app/assets/stylesheets/application.css"
+      send_data(kit.to_pdf, :filename => "#{@article.title}.pdf", :type => 'application/pdf')
+      return # to avoid double render call
+    }
     end
   end
 

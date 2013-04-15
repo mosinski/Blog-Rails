@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.3'
 
@@ -42,3 +42,7 @@ gem "bb-ruby", "~> 0.9.5"
 gem 'will_paginate'
 gem 'coderay'
 gem 'RedCloth'
+gem "pdfkit", "~> 0.5.2"
+group :development do
+  gem "wkhtmltopdf-binary", "~> 0.9.5.3"
+end
