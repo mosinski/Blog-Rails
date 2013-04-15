@@ -12,7 +12,7 @@
 <![endif]-->
 <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
 <title>
-Mosinski Blog<% if yield(:title) != '' %> - <%= yield(:title) %><% end %>
+Miłosz Osiński Blog<% if yield(:title) != '' %> - <%= yield(:title) %><% end %>
 </title>
   <%= javascript_include_tag "application" %>
   <%= stylesheet_link_tag "application" %>
@@ -990,7 +990,7 @@ Zbiór doświadczeń studenta Informatyki..
 <div class="grid_3" id="search">
 <div class="subskrypcja_rss">
 <a href="http://blog.m1l05z.pl/articles.atom">
-<%= image_tag ("rss.png", :title => "Subskrypcja Atom") %>
+<%= image_tag("rss.png", :title => "Subskrypcja Atom") %>
 </a>
 </div>
 <%= form_tag request.path, :method => 'get' do %>
