@@ -37,7 +37,8 @@
  data-nk-image = "http://mosinskiblog.herokuapp.com/logo.png" data-nk-description = <%= @article.body[0..30] %> > </div>
 </div>
 </div>
-<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :style => "float:left;"), article_path(@article, :format => 'pdf') %>
+<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
+<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') %>
 </div>
 <div class="następny_poprzedni">
 <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
