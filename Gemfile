@@ -43,6 +43,6 @@ gem 'will_paginate'
 gem 'coderay'
 gem 'RedCloth'
 gem "pdfkit", "~> 0.5.2"
-group :development do
+group :production do
   gem "wkhtmltopdf-binary", "~> 0.9.5.3"
 end
