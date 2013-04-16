@@ -46,5 +46,3 @@ gem "pdfkit", "~> 0.5.2"
 group :development do
   gem "wkhtmltopdf-binary", "~> 0.9.5.3"
 end
-gem "wicked_pdf"
-gem "wkhtmltopdf-heroku"
