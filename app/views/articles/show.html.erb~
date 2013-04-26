@@ -26,7 +26,7 @@
 <div class='spread'>
 <div class='twshare left'>
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="funonrails">Tweet</a>
-<div class="fb_button" style="background:none;position: relative; top: -2.5px; left: -10px;">
+<div class="fb_button" style="background:none;position: relative; left: -10px; display: inline;">
 <fb:like href="" layout="button_count" show_faces="false" width="45" font=""></fb:like>
 </div></div></div>
 <div class="google">
@@ -38,7 +38,7 @@
 </div>
 </div>
 <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
-<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') %>
+<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') if Rails.env.development? %>
 </div>
 <div class="następny_poprzedni">
 <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
