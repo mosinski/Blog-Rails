@@ -244,7 +244,7 @@ font-style:italic;
 color:#333;
 margin:5px;
 padding: 10px 10px 0px 30px;
-background: url(/quotes.jpg) no-repeat top left;
+background: url("/assets/quotes.jpg") no-repeat top left;
 width: 620px;
 }
 em {
@@ -571,7 +571,7 @@ height:auto;
 }
 /* Global */
 body {
-background: url(/background.png);
+background: url(/assets/background.png);
 }
 /* Header */
 #header {
@@ -801,7 +801,7 @@ width: 40px;
 padding: 20px 20px 10px 20px;
 margin: 15px 0px 15px 0px;
 /* background: #FFF; */
-background-color: rgb(255, 255, 255);
+background: url("/assets/noise.png") repeat scroll 0% 0% rgb(255, 255, 255);
 border: solid 1px #e3e3e3;
 -moz-box-shadow: inset 0 0 10px #f3f3f3;
 -webkit-box-shadow: inset 0 0 10px #f3f3f3;
@@ -810,7 +810,7 @@ box-shadow: inset 0 0 10px #f3f3f3;
 .post-administrator {
 padding: 20px 20px 10px 20px;
 margin: 15px 0px 15px 0px;
-background: url("http://mosinskiblog.herokuapp.com/home-bkg.gif") repeat scroll 8px 12px rgb(255, 255, 255);
+background: url("/assets/home-bkg.gif") repeat scroll 8px 12px rgb(255, 255, 255);
 border: solid 1px #FFCC00;
 -moz-box-shadow: inset 0 0 10px #f3f3f3;
 -webkit-box-shadow: inset 0 0 10px #f3f3f3;
@@ -962,9 +962,11 @@ margin: 0;
 <div class="description">
 Zbiór doświadczeń studenta Informatyki..
 </div>
+<div class="social_glowna">
 <div class="fb-like" data-href="http://blog.m1l05z.pl/" data-send="false" data-layout="box_count" data-width="650" data-show-faces="true" data-font="trebuchet ms"></div>
 <div class="twitter-glowna"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.m1l05z.pl" data-via="Blog Informatyczny - Mosinski Blog" data-lang="pl" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a></div>
 <div class="g-plusone" data-size="tall" data-href="http://blog.m1l05z.pl"></div>
+</div>
 </div>
 </div>
 </div>

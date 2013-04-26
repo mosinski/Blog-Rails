@@ -435,24 +435,25 @@ td.line-numbers pre a { color:black; font-weight:bold;}
 td.code pre{ width:750px; font-size:12px; line-height:15px; }
 .fb-like{
 display:block;
-position:absolute;
-top:30px;
-left:200px;
+margin-right:10px;
 }
 .twitter-glowna {
-    display: inline-block;
-    position: relative;
-    top: 33px;
-    left: 210px;
+display: inline-block;
+margin-right:10px;
 }
 #___plusone_0{
-    display: inline-block;
-    position: relative;
-    top: 32px;
-    left: 220px;
+display: inline-block;
 }
 .info-sidebar{
 width:250px;
+}
+.social_glowna{
+display:inline-block;
+height:70px;
+width:250px;
+position:absolute;
+top:30px;
+right:20%;
 }
 .następny_poprzedni {
     margin-left: 67%;
