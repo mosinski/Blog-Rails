@@ -1,13 +1,21 @@
-<img src="http://blog.m1l05z.pl/assets/logo2.png" alt="Icon" />
-Witaj,<br>
-Napewno zainteresuję Cię informacja, że na Miłosz Osiński Blog<br>
+<div style="background:url(http://blog.m1l05z.pl/assets/background.png)">
+<img src="http://blog.m1l05z.pl/assets/logo2.png" alt="Icon"/>
+<div style="margin-left:10px;">
+<h2>Witaj,</h2>
+<h4>Napewno zainteresuję Cię informacja, że na Miłosz Osiński Blog<br>
 został umieszczony nowy artykuł:<br>
 <%= link_to @article.title, ("http://blog.m1l05z.pl/articles/" + @article.id.to_s) %><br><br>
 
-Anulowanie Subskrypcji:<br>
+Rezygnacja z Subskrypcji:<br>
 <%= link_to "Chcę zrezygnować z subskrypcji", "http://blog.m1l05z.pl/zgloszenie/" %><br>
 <b>Indywidualny kod dostępu:</b> <%= @newsletter.kod_dostepu %><br>
-<br><br>
+<br><br></h4>
 Miłego czytania.<br>
 Pozdrawiam<br>
 <b>Miłosz Osiński</b>
+</div>
+<hr>
+<div>
+© 2013 Miłosz Osiński 
+<div>
+<div>
