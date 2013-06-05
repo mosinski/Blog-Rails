@@ -1,9 +1,0 @@
-<%= render @articles %>
-<br />
-<%= link_to 'New Article', new_article_path %>
-<br />
-<center><%= page_entries_info @articles %></center>
-<br />
-<div id="blog-pager" class="blog-pager">
-<%= will_paginate @articles, :container => false %>
-</div>
