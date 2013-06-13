@@ -1,15 +1,18 @@
-<div style="background:url(http://blog.m1l05z.pl/assets/background.png)">
+<div style="background:url(http://blog.m1l05z.pl/assets/background.png);margin:-10px -8px; 0 -10px;">
 <img src="http://blog.m1l05z.pl/assets/logo2.png" alt="Icon"/>
-<div style="margin-left:10px;">
+<div style="margin-left:10%;margin-top:-30px;">
 <h2>Witaj,</h2>
+<div style="margin-left:5%;font-size:18px;">
 <h4>Napewno zainteresuję Cię informacja, że na Miłosz Osiński Blog<br>
 został umieszczony nowy artykuł:<br>
+<div style="display: block;border: 1px solid rgb(40, 40, 63);padding: 15px 30px;width: 340px;margin: 0px auto;border-radius: 10px 10px 10px 10px;box-shadow: 0px 0px 10px rgb(4, 3, 7);text-align: center;">
 <%= link_to @article.title, ("http://blog.m1l05z.pl/articles/" + @article.id.to_s) %><br><br>
-
+</div>
 Rezygnacja z Subskrypcji:<br>
 <%= link_to "Chcę zrezygnować z subskrypcji", "http://blog.m1l05z.pl/zgloszenie/" %><br>
 <b>Indywidualny kod dostępu:</b> <%= @newsletter.kod_dostepu %><br>
 <br><br></h4>
+</div>
 Miłego czytania.<br>
 Pozdrawiam<br>
 <b>Miłosz Osiński</b>
