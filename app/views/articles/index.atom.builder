@@ -1,5 +1,5 @@
 atom_feed do |feed|
-  feed.title "Mosinski Blog"
+  feed.title "Miłosz Osiński Blog"
   feed.updated @articles.first.created_at
 
   @articles.each do |article|

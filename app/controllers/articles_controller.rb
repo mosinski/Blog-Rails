@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class ArticlesController < ApplicationController
 
    USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
@@ -62,11 +63,11 @@ class ArticlesController < ApplicationController
       if @article.save
 	@newsletters = Newsletter.all
 	if @newsletters != NIL
- 	@newsletters.each do |newsletter|
-	NewsletterMailer.newsletter_sender(newsletter, @article).deliver
+ 	  @newsletters.each do |newsletter|
+	  NewsletterMailer.newsletter_sender(newsletter, @article).deliver
 	end
         end
-        format.html { redirect_to @article, notice: 'Dodano nowy artykul.' }
+        format.html { redirect_to @article, notice: "Dodano nowy artykuł '#{@article.title}'" }
         format.json { render json: @article, status: :created, location: @article }
       else
         format.html { render action: "new" }
@@ -82,7 +83,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
-        format.html { redirect_to @article, notice: 'Artykul zostal pomyslnie zaktualizowany.' }
+        format.html { redirect_to @article, notice: "Zaktualizowano artykuł '#{@article.title}'" }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
