@@ -9,7 +9,7 @@
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
 <% if article.body.length > 500 %>
-<%= article.body[0..500] %>
+<%=coderay(article.body[0..500]+"</code>...") %>
 <% else %>
 <%=raw textilize(coderay(article.body)) %>
 <% end %>
