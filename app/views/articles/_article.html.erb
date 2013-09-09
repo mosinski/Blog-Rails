@@ -9,9 +9,9 @@
 
 <div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
 <% if article.body.length > 500 %>
-<%= sanitize article.body[0..500] %>
+<%=raw textilize(coderay(article.body[0..500]+"</code>...")) %>
 <% else %>
-<%= sanitize article.body %>
+<%=raw textilize(coderay(article.body)) %>
 <% end %>
 </div>
 
