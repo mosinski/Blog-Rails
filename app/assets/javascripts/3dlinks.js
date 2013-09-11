@@ -1,3 +1,4 @@
+jQuery(document).ready(function() {
 var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined ||
                             document.body.style['MozPerspective'] !== undefined;
 
@@ -18,3 +19,6 @@ function linkify( selector ) {
 }
 
 linkify( '.sidebarlinki' );
+});
+
+
