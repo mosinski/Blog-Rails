@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class ArticlesController < ApplicationController
 
-   USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
+   USER_ID, PASSWORD = ENV['HTTP_USER'] || 'Administrator', ENV['HTTP_PASSWORD'] || 'password'
  
    # Require authentication only for edit and delete operation
    before_filter :authenticate, :only => [ :new, :edit, :destroy ]

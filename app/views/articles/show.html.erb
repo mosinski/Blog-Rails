@@ -1,53 +1,43 @@
 <% title @article.title %>
-<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
-
- <div class="postdate">
-	<div class="postmonth"><%= @article.created_at.strftime("%m")%></div>
-	<div class="postday"><%= @article.created_at.strftime("%d")%></div>
- </div>
-
-  <h1 itemprop="name"><%= @article.title %></h1>
-<div class="przyciski">
-<%= link_to image_tag("edit.png"), edit_article_path(@article), :class => "przyciskii" %>
-<%= link_to image_tag("delete.gif"), @article, :confirm => 'Czy napewno chcesz usunąć artykuł?', :method => :delete, :class => "przyciskii" %>
-</div>
-
-<div id="post-body-3046711704759827720" class="entry" itemprop="articleBody">
-<%= sanitize @article.body %>
-</div>
-
-<div class="postmetadata">
-   <div class="meta">
-	<span class="time"><em>Ostatnia modyfikacja </em><%= @article.updated_at.strftime("%H:%M %d-%m-%Y") %><em> przez </em><b>Miłosz Osiński</b></span>
-   </div>
-	<span class="categories">Kategoria: </span><%= @article.kategoria %>
-
-<div class="social_buttons">
-<div class='spread'>
-<div class='twshare left'>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="funonrails">Tweet</a>
-<div class="fb_button" style="background:none;position: relative; left: -10px; display: inline;">
-<fb:like href="" layout="button_count" show_faces="false" width="45" font=""></fb:like>
-</div></div></div>
-<div class="google">
- <div class="g-plusone" data-size="medium" ></div>
-</div>
-<div class="nk">
-<div class = "nk-fajne" data-nk-url = "http://blog.m1l05z.pl" data-nk-type = "3" data-nk-color = "0" data-nk-title = <%= @article.title %>
- data-nk-image = "http://mosinskiblog.herokuapp.com/logo.png" data-nk-description = <%= @article.body[0..30] %> > </div>
-</div>
-</div>
-<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
-<%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') if Rails.env.development? %>
-</div>
-<div class="następny_poprzedni">
-<%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 			
-<%= link_to("Następny Artykuł »", @article.next_article) if @article.next_article %>
-</div>
+<div class="date-outer">
+  <h2 class="date-header"><span><%= @article.created_at.strftime("%A, %B %d, %Y")%></span></h2>
+  <div class="date-posts">
+    <div class="post-outer">
+      <article class="post hentry">
+        <a name="2165021750605474041"></a>
+        <h2 class="post-title entry-title"><span class="post_title_icon"></span>
+          <%= @article.title %>
+        </h2>
+        <div class="bpostmeta">
+          <span><i class="fa fa-clock-o"></i> <%= @article.created_at.strftime("%A, %B %d, %Y")%></span>
+          <span><i class="fa fa-user"></i> Dodany przez Miłosz Osiński</span>
+          <span><i class="fa fa-bookmark"></i> <%= "##{@article.kategoria}" %></span>
+          <span><i class="fa fa-comments"></i> Ilość komentarzy: <%= @article.comments.count %></span>
+        </div>
+        <div class="post-header-line-1"></div>
+        <div class="post-body entry-content clearfix">
+          <div class="entry-colors">
+            <div class="color_col_1"></div>
+            <div class="color_col_2"></div>
+            <div class="color_col_3"></div>
+          </div>
+          <div id="summary2165021750605474041">
+            <div>
+              <%= sanitize @article.body %>
+            </div>
+          </div>
+          <div class="następny_poprzedni">
+            <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 
+            <%= link_to("Następny Artykuł »", @article.next_article) if @article.next_article %>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+      </article>
+      <div style="clear: both;"></div>
+    </div>
 </div>
 
 <div id="comment-block">
-<h3 id="comments-title"><%= @article.comments.count %></h3>
   <%= render :partial => 'comment', :collection => @article.comments %> 
 </div>
 <div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope" id="post_hentry">
@@ -72,7 +62,4 @@
   </div><br />
   <p><%= f.submit :value=>"Dodaj Komentarz", "rel"=>"nofollow" %></p>
 <% end %>
-<div class="bbcode_help_comments">
-<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold", "title" => "Pogrubienie" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic', "title" => "Kursywa" %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u", "title" => "Podkreślenie" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s", "title" => "Przekreślenie" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url', "title" => "Link" %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat', "title" => "Cytat" %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code', "title" => "Fragment Kodu" %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num', "title" => "Lista Numeryczna" %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop', "title" => "Lista Kropkowa" %>
-</div>
 </div>

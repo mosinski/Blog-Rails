@@ -1,0 +1,53 @@
+body {
+  font-family:'Source Sans Pro',sans-serif
+}
+
+h1.textlogo {
+  font-family:'Source Sans Pro',sans-serif
+}
+
+h1, h2, h3, h4, h5, h6, .mainbpart h1, #intro {
+  font-family:'Source Sans Pro',sans-serif
+}
+
+body {
+  color:#666659
+}
+
+a {
+  color:#2A2A26
+}
+a:hover {
+  color:#43CACC
+}
+
+h1.textlogo a {
+  color:#43CACC
+}
+
+h2, h3, h4, h5, h6 {
+  color:#2A2A26
+}
+
+aside h3 {
+  color:#3F3F3A
+}
+
+.mainbpart article h2 a {
+  color:#2A2A26
+}
+.mainbpart article h2 a:hover {
+  color:#43CACC
+}
+
+.navbpart ul li a {
+  color:#8C8C7B !important
+}
+.navbpart ul li a:hover, 
+.navbpart ul li.current-menu-item a, 
+.navbpart ul li.current-post-parent a, 
+.navbpart ul li a:hover, 
+.navbpart ul li.current-menu-item a, 
+.navbpart ul li.current-post-parent a {
+  color:#FFF !important
+}
