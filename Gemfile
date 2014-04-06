@@ -26,3 +26,4 @@ group :development do
   gem "wkhtmltopdf-binary", "~> 0.9.5.3"
 end
 gem 'newrelic_rpm'
+gem 'font-awesome-rails'
