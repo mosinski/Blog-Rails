@@ -42,3 +42,15 @@
     <%= raw disqus_thread %>
   </div>
 </div>
+
+<script type="text/javascript">
+  var disqus_shortname = ENV['disqus_shortname'];
+  var disqus_identifier = '<%= @article.id %>';
+  var disqus_url = '<%= url_for(@article, :only_path => false) %>';
+
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
