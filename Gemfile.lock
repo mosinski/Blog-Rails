@@ -41,6 +41,8 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     daemons (1.1.9)
+    disqus (1.0.4)
+      json
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.1)
@@ -123,6 +125,7 @@ DEPENDENCIES
   bb-ruby (~> 0.9.5)
   coderay
   coffee-rails (~> 3.2.1)
+  disqus
   font-awesome-rails
   jquery-rails
   newrelic_rpm
