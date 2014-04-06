@@ -12,7 +12,7 @@
           <span><i class="fa fa-clock-o"></i> <%= @article.created_at.strftime("%A, %B %d, %Y")%></span>
           <span><i class="fa fa-user"></i> Dodany przez Miłosz Osiński</span>
           <span><i class="fa fa-bookmark"></i> <%= "##{@article.kategoria}" %></span>
-          <span><i class="fa fa-comments"></i> Ilość komentarzy: <%= link_to "##", article_url(@article, :anchor => "disqus_thread"), :"data-disqus-identifer" => @article.id %></span>
+          <span><i class="fa fa-comments"></i> <%= link_to "##", article_url(@article, :anchor => "disqus_thread"), :"data-disqus-identifer" => @article.id %></span>
         </div>
         <div class="post-header-line-1"></div>
         <div class="post-body entry-content clearfix">
