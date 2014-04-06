@@ -38,28 +38,7 @@
 </div>
 
 <div id="comment-block">
-  <%= render :partial => 'comment', :collection => @article.comments %> 
-</div>
-<div class="post hentry" itemtype="http://schema.org/BlogPosting" itemscope="itemscope" id="post_hentry">
-<%= form_for([@article, @article.comments.build]) do |f| %>
-<div class="user_info">
-  <div class="field_single">
-    <%= f.label :imię %><br />
-    <%= f.text_field :name %>
+  <div id ="disqus_thread">
+    <%= raw disqus_thread %>
   </div>
-  <div class="field_single">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field_single">
-    <%= f.label :Jaki_dziś_dzień_tygodnia? %><br />
-    <%= text_field_tag :dzien_tygodnia %>
-  </div>
-</div>
-  <div class="field">
-    <br /><br /><br />
-    <%= f.text_area :body, :rows => "5", :class => "komentarz_body"%>
-  </div><br />
-  <p><%= f.submit :value=>"Dodaj Komentarz", "rel"=>"nofollow" %></p>
-<% end %>
 </div>

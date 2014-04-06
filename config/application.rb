@@ -9,6 +9,12 @@ end
 
 module Blog
   class Application < Rails::Application
+    config.after_initialize do
+      Disqus::defaults[:account] = "mioszosiskiblog"
+      Disqus::defaults[:developer] = true
+      Disqus::defaults[:container_id] = "disqus_thread"
+      Disqus::defaults[:show_powered_by] = false
+    end
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
     config.assets.paths << "#{Rails.root}/app/assets/fonts"

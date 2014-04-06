@@ -27,3 +27,4 @@ group :development do
 end
 gem 'newrelic_rpm'
 gem 'font-awesome-rails'
+gem 'disqus'
