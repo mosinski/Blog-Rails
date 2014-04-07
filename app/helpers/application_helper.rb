@@ -21,6 +21,6 @@ module ApplicationHelper
   end
 
   def most_popular
-    Visit.order(:total_visits).first(3)
+    Visit.order(:total_visits).reverse.first(3)
   end
 end
