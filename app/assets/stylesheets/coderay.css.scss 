@@ -7,6 +7,7 @@ table.CodeRay {
 
 .CodeRay {
   font-family: 'Courier New', 'Terminal', monospace;
+  background: #eee8d5;
   overflow: auto;
   margin: 9px 0px ;
   color: rgb(230, 224, 219);
