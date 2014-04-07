@@ -59,7 +59,7 @@
           <div class="mainblogsec section" id="mainblogsec">
             <div class="widget Blog" id="Blog1">
               <div class="blog-posts hfeed">
-                <%= yield %>  
+                <%= yield %>
               </div>
             </div>
             <script type="text/javascript">window.___gcfg = {'lang': 'pl'};</script>
@@ -69,34 +69,24 @@
       <aside>
         <div class="sidebar section" id="sidebartop">
           <div class="widget PopularPosts" id="PopularPosts1">
-            <h2>Popular Posts</h2>
+            <h2>Popularne Posty</h2>
             <div class="widget-content popular-posts">
               <ul>
-                <li>
-                <div class="item-thumbnail-only">
-                  <div class="item-title">
-                    <a href="http://moments-theme.blogspot.com/2010/09/sample-post-with-links-paragraphs-and.html">Sample post with, links, paragraphs and comments</a>
-                  </div>
-                </div>
-                <div style="clear: both;"></div>
-                </li>
-                <li>
-                <div class="item-thumbnail-only">
-                  <div class="item-title"><a href="http://moments-theme.blogspot.com/2010/08/this-is-just-going-to-be-another-test.html">This is Just Going To Be Another Test Post</a></div>
-                </div>
-                <div style="clear: both;"></div>
-                </li>
-                <li>
-                <div class="item-thumbnail-only">
-                  <div class="item-title"><a href="http://moments-theme.blogspot.com/2010/08/another-one-to-fill-space.html">Another One to Fill Space</a></div>
-                </div>
-                <div style="clear: both;"></div>
-                </li>
+                <% most_popular.each do |visit| %>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-title">
+                        <%= link_to (strip_tags(visit.visitable.body))[0..50], visit.visitable %>
+                      </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                <% end %>
               </ul>
             </div>
           </div>
           <div class="widget Label" id="Label1">
-            <h2>Categories</h2>
+            <h2>Kategorie</h2>
             <div class="widget-content list-label-widget-content">
               <ul>
                 <%= category_counter('NEWS', 'NEWS') %>
@@ -124,7 +114,7 @@
   <footer class="wrapperbpart">
     <div class="widget" id="social">
       <a href="mailto:mylosz@yahoo.pl"><i class="fa fa-envelope fa-2"></i></a>
-      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-2"></i></a>
+      <a href="https://www.facebook.com/m1l05z"><i class="fa fa-facebook-square fa-2"></i></a>
       <a href="https://pl.linkedin.com/in/mosinski1/"><i class="fa fa-linkedin fa-2"></i></a>
       <a href="https://github.com/mosinski?tab=repositories"><i class="fa fa-github fa-2"></i></a>
       <a href="/articles.atom"><i class="fa fa-rss fa-2"></i></a>

@@ -26,7 +26,7 @@
               <%= sanitize @article.body %>
             </div>
           </div>
-          <div style="width:30px;float:left;margin:35px 0px -20px -10px;">
+          <div style="float:left">
             <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
             <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') if Rails.env.development? %>
           </div>

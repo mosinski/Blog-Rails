@@ -19,4 +19,8 @@ module ApplicationHelper
       end
     end
   end
+
+  def most_popular
+    Visit.order(:total_visits).first(3)
+  end
 end
