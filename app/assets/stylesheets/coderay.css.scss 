@@ -1,24 +1,24 @@
 table.CodeRay {
-width: 100px;
-margin-top:-80px;
-border-style: solid;
-border-width: 1px;
+  width: 100%;
+  margin-top: -80px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .CodeRay {
-font-family: 'Courier New', 'Terminal', monospace;
-overflow: auto;
-margin: 9px 0px ;
-color: rgb(230, 224, 219);
-border-style: solid;
-border-width: 1px;
+  font-family: 'Courier New', 'Terminal', monospace;
+  overflow: auto;
+  margin: 9px 0px ;
+  color: rgb(230, 224, 219);
+  border-style: solid;
+  border-width: 1px;
 }
 
 .CodeRay pre {
-font-size: 12px;
-color:#000;
-padding: 2px 0px 2px 5px;
-font-weight: normal;
+  font-size: 12px;
+  color:#000;
+  padding: 2px 0px 2px 5px;
+  font-weight: normal;
 }
 
 .CodeRay .an { color:#E7BE69 }                      /* html attribute */
@@ -128,4 +128,4 @@ font-weight: normal;
 td.line-numbers { display:none;}
 td.line-numbers pre{ width:10px; font-size:12px; background:#339999;}
 td.line-numbers pre a { color:black; font-weight:bold;}
-td.code pre{ width: 700px; font-size:12px; line-height:15px; }
+td.code pre{ font-size:12px; line-height:15px; }
