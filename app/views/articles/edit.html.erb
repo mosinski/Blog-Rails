@@ -1,11 +1,26 @@
-<br />
-<%= form_for(@article) do |f| %>
-<%= render partial: 'form', locals: { f: f } %>
-  <div class="actions">
-    <%= f.submit :value => "Aktualizuj Artykuł" %><%= button_tag "Powrót",:type => 'button',:class => 'button',:onclick => "location.href = '#{articles_path}'" %>
+<div class="date-outer">
+  <div class="date-posts">
+    <div class="post-outer">
+      <article class="post hentry">
+        <div class="post-header-line-1"></div>
+        <div class="post-body entry-content clearfix">
+          <div class="entry-colors">
+            <div class="color_col_1"></div>
+            <div class="color_col_2"></div>
+            <div class="color_col_3"></div>
+          </div>
+          <div id="summary2165021750605474041">
+            <div>
+              <%= form_for(@article) do |f| %>
+                <%= render partial: 'form', locals: { f: f } %>
+                <div class="actions">
+                  <%= f.submit :value => "Aktualizuj Artykuł" %><%= button_tag "Powrót",:type => 'button',:class => 'button',:onclick => "location.href = '#{articles_path}'" %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
-<% end %>
-<div class="bbcode_help">
-<%= button_tag image_tag("icons/bold.gif", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_bold" %><%= button_tag image_tag("icons/italic.jpeg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_italic' %><%= button_tag image_tag("icons/u.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_u" %><%= button_tag image_tag("icons/s.jpeg", :class=>'obrazek'), :class => "bbcode_help_button", :id => "przycisk_s" %><%= button_tag image_tag("icons/url.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_url' %><%= button_tag image_tag("icons/blockquote.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_cytat' %><%= button_tag image_tag("icons/code.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_code' %><%= button_tag image_tag("icons/img.png", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_img' %><%= button_tag image_tag("icons/youtube.jpg", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_youtube' %><%= button_tag image_tag("icons/ol.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_num' %><%= button_tag image_tag("icons/ul.gif", :class=>'obrazek'), :class => 'bbcode_help_button', :id => 'przycisk_list_krop' %>
 </div>
-<br /><br />
