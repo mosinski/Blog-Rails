@@ -1,27 +1,33 @@
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-	<% if  (@article.errors.count)==1  %>
-      <h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu jednego błędu</h2>
-    	<% elsif (@article.errors.count)>1 %>
-	<h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu <%= @article.errors.count %> błędów</h2>
-    	<% end %>
-      <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-        <li><div class="alert-error"><%= msg %></div></li>
-      <% end %>
-      </ul>
-    </div>
+<% if @article.errors.any? %>
+  <div id="error_explanation">
+  <% if  (@article.errors.count)==1  %>
+    <h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu jednego błędu</h2>
+<% elsif (@article.errors.count)>1 %>
+    <h2 style="color: rgb(185, 74, 72);">Artykuł nie został stworzony z powodu <%= @article.errors.count %> błędów</h2>
+<% end %>
+  <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li><div class="alert-error"><%= msg %></div></li>
+  <% end %>
+  </ul>
+</div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Tytuł_Artykułu%><br />
-    <%= f.text_field :title, :class => "artykul_tytul"  %>
+<div id="wrapping" class="clearfix">
+  <div>
+    <div style="display:inline-block;">
+      <%= f.label :Tytuł_Artykułu%><br />
+      <%= f.text_field :title %>
+    </div>
+    <div style="display:block;float:right;">
+      <%= f.label :kategoria %><br />
+      <%= f.select(:kategoria, options_for_select([['NEWS', 'NEWS'], ['C#', 'C#'], ['ANDROID', 'ANDROID'], ['HTML5', 'HTML5'], ['UBUNTU', 'UBUNTU'], ['RUBY', 'RUBY ON RAILS']],@article.kategoria), {}, {:class => "kategoria"}) %>
+    </div>
   </div>
-  <div class="kategoria_box">
-    <%= f.label :kategoria %><br />
-    <%= f.select(:kategoria, options_for_select([['NEWS', 'NEWS'], ['C#', 'C#'], ['ANDROID', 'ANDROID'], ['HTML5', 'HTML5'], ['UBUNTU', 'UBUNTU'], ['RUBY', 'RUBY ON RAILS']],@article.kategoria), {}, {:class => "kategoria"}) %>
+  <div>
+    <div style="display:block">
+      <%= f.label :Treść_Artykułu %>
+      <%= f.text_area :body, "style" => "width:100%" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :Treść_Artykułu %><br />
-    <%= f.text_area :body, :class => 'area_text' %>
-  </div>
+</div>
