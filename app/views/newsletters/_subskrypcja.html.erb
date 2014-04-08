@@ -1,7 +1,4 @@
 <%= form_for(@newsletter || Newsletter.new) do |f| %>
-  <div class="field">
-    <%= f.text_field :email, :class =>"rejestracja",:placeholder => 'Twój Adres Email' %>
-  </div>
-<%= f.submit :class => 'btn btn-success', :id =>"rejestracja_przycisk", :value => "Subskrybuj"%>
+  <%= f.text_field :email, :placeholder => 'Twój Adres Email' %>
 <% end %>
 

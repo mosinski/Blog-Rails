@@ -59,8 +59,6 @@
     margin: 0px;
  }
 
-
-
 .CodeRay .an { color:#E7BE69 }                      /* html attribute */
 .CodeRay .c  { color:#BC9358; font-style: italic; } /* comment */
 .CodeRay .ch { color:#509E4F }                      /* escaped character */
