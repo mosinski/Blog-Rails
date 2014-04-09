@@ -9,7 +9,7 @@
           <%= @article.title %>
         </h2>
         <div class="bpostmeta">
-          <span><i class="fa fa-clock-o"></i> <%= @article.created_at.strftime("%A, %B %d, %Y")%></span>
+          <span><i class="fa fa-clock-o"></i> <%= I18n.l @article.created_at, format: "%A, %B %d, %Y" %></span>
           <span><i class="fa fa-user"></i> Dodany przez Miłosz Osiński</span>
           <span><i class="fa fa-bookmark"></i> <%= "##{@article.kategoria}" %></span>
           <span><i class="fa fa-comments"></i> <%= link_to "##", article_url(@article, :anchor => "disqus_thread"), :"data-disqus-identifer" => @article.id %></span>
