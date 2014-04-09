@@ -155,6 +155,21 @@ pl:
       create: Utwórz %{model}
       submit: Zapisz %{model}
       update: Aktualizuj %{model}
+  will_paginate:
+    previous_label: "«"
+    next_label: "»"
+    page_gap: "…"
+    page_entries_info:
+      single_page:
+        zero:  "No %{model} found"
+        one:   "Displaying 1 %{model}"
+        other: "Displaying all %{count} %{model}"
+      single_page_html:
+        zero:  "Brak Artykułów do wyświetlenia"
+        one:   "Wyświetlany <b>1</b> Artykuł"
+        other: "Wyświetlane <b>wszystkie&nbsp;%{count}</b> Artykułów"
+      multi_page: "Wyświetlane Artykuły %{from} - %{to} z  %{count}"
+      multi_page_html: "Wyświetlane Artykuły <b>%{from} – %{to}</b> z <b>%{count}</b>"
   number:
     currency:
       format:

@@ -142,6 +142,10 @@ en:
       create: Create %{model}
       submit: Save %{model}
       update: Update %{model}
+  will_paginate:
+    previous_label: "«"
+    next_label: "»"
+    page_gap: "…"
   number:
     currency:
       format:
