@@ -16,7 +16,6 @@ module Blog
       Disqus::defaults[:show_powered_by] = false
     end
     config.encoding = "utf-8"
-    config.filter_parameters += [:password]
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.assets.precompile += %w( .woff )
     config.active_record.whitelist_attributes = true

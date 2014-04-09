@@ -7,10 +7,10 @@ Blog::Application.routes.draw do
     resources :comments
   end
 
-  match '/feed' => 'articles#feed.rss', :as => :feed, :defaults => { :format => 'atom' }
-  match '/about' => 'articles#about'
-  match '/zgloszenie' => 'newsletters_#zgloszenie'
-  match '/rezygnuje_z_subskrypcji' => 'newsletters_#rezygnuje'
-  match '/newsletters/new' => 'articles#index'
+  get '/feed' => 'articles#feed.rss', :as => :feed, :defaults => { :format => 'atom' }
+  get '/about' => 'articles#about'
+  get '/zgloszenie' => 'newsletters_#zgloszenie'
+  get '/rezygnuje_z_subskrypcji' => 'newsletters_#rezygnuje'
+  get '/newsletters/new' => 'articles#index'
   root :to => "articles#index"
 end

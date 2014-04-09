@@ -4,7 +4,7 @@
     weight: 300;
     style: 'normal';
   }
-  src: asset-url('SourceSansPro-Light.woff', font) format('woff');
+  src: asset-url('SourceSansPro-Light.woff') format('woff');
 }
 @font-face {
   font: {
@@ -12,7 +12,7 @@
     weight: 400;
     style: 'normal';
   }
-  src: asset-url('SourceSansPro-Regular.woff', font) format('woff');
+  src: asset-url('SourceSansPro-Regular.woff') format('woff');
 }
 @font-face {
   font: {
@@ -20,7 +20,7 @@
     weight: 700;
     style: 'normal';
   }
-  src: asset-url('SourceSansPro-Bold.woff', font) format('woff');
+  src: asset-url('SourceSansPro-Bold.woff') format('woff');
 }
 @font-face {
   font: {
@@ -28,5 +28,5 @@
     weight: 900;
     style: 'normal';
   }
-  src: asset-url('SourceSansPro-Black.woff', font) format('woff');
+  src: asset-url('SourceSansPro-Black.woff') format('woff');
 }
