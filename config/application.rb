@@ -17,7 +17,7 @@ module Blog
     end
     config.encoding = "utf-8"
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
-    config.assets.precompile += %w( .woff )
+    config.assets.precompile += %w( .svg .eot .woff .ttf )
     config.active_record.whitelist_attributes = true
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :pl

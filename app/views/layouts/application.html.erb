@@ -45,7 +45,7 @@
           <% end %>
         </div>
         <div class="mini_divider"></div>
-        <div class="search_box">
+        <div class="search_box" id="newsletter_box" style="display:block">
           <span style="font-weight:bold;color:#8C8C7B">Subskrypcja @</span>
           <%= render :partial => "newsletters/subskrypcja" %>
         </div>
@@ -121,5 +121,13 @@
     Copyright © <%= Time.now.year %> Miłosz Osiński
   </footer>
 </div>
+<script>
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if(height > 50 && height < 100) {
+      $("#newsletter_box").effect("shake", { times:3 }, 85);
+    }
+  });
+</script>
 </body>
 </html>
