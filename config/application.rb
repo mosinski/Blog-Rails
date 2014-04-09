@@ -19,6 +19,8 @@ module Blog
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.assets.precompile += %w( .woff )
     config.active_record.whitelist_attributes = true
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.default_locale = :pl
     config.assets.enabled = true
     config.assets.version = '1.0'
     config.time_zone = 'Warsaw'
