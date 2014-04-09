@@ -269,7 +269,7 @@ margin: 0 auto;
 width:80%;
 }
 .search_box input {
-background-image: url('<%= asset_path("searchbg.png") %>');
+background-image: image-url('searchbg.png');
 background-position: 90% center;
 background-repeat: no-repeat;
 border: medium none;
@@ -358,7 +358,7 @@ transition: all 0.4s ease-out;
 color:#43CACC;
 }
 .mainbpart article h2 .post_title_icon {
-background-image: url('<%= asset_path("post_title_icon.png") %>');
+background-image: image-url('post_title_icon.png');
 background-position: left;
 background-repeat: no-repeat;
 display:inline-table;
