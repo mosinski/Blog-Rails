@@ -1,8 +1,7 @@
-# Witam oto mój blog w Rails 3 <font color="blue">Mosinski Blog</font>#
-
-Blog korzysta z template-a ze strony 
-> http://blog.btemplates.com/
-
+# Mój blog w Rails 4
 
 # Blog na Heroku#
 > http://mosinskiblog.herokuapp.com/
+
+# Custom Domain
+> http://blog.m1l05z.pl

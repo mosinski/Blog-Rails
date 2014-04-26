@@ -1,4 +1,9 @@
 <% title @article.title %>
+<% content_for :facebook do %>
+  <meta property="og:title" content="<%= @article.title %>" />
+  <meta property="og:url" content="<%= articles_url(@article) %>" />
+  <meta property="og:description" content="<%= strip_tags(@article.body).html_safe %>" />
+<% end %>
 <div class="date-outer">
   <h2 class="date-header"><span><%= @article.created_at.strftime("%A, %B %d, %Y")%></span></h2>
   <div class="date-posts">
@@ -30,6 +35,7 @@
             <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
             <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') if Rails.env.development? %>
           </div>
+          <div class="share_me" style="float:left;margin-left:200px"></div>
           <div class="nastepny_poprzedni">
             <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 
             <%= link_to("Następny Artykuł »", @article.next_article) if @article.next_article %>
@@ -57,4 +63,11 @@
     s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   }());
+</script>
+<script>
+  var share = new Share(".share_me", {
+    ui: {
+      button_text: "Udostępnij"
+    }
+  });
 </script>

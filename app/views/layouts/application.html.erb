@@ -8,6 +8,11 @@
   <%= auto_discovery_link_tag(:atom, articles_path(:atom)) %>
   <%= javascript_include_tag "application" %>
   <%= stylesheet_link_tag "application" %>
+
+  <meta property="og:site_name" content="Miłosz Osiński Blog"/>
+  <meta property="og:image" content="<%= asset_path('logo2_big.png') %>" />
+  <meta property="og:type" content="website" />
+  <%= yield :facebook %>
 </head>
 <body>
   <div class="main-container">

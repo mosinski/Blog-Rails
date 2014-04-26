@@ -9,55 +9,55 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140407213343) do
+ActiveRecord::Schema.define(version: 20140407213343) do
 
-  create_table "articles", :force => true do |t|
+  create_table "articles", force: true do |t|
     t.string   "title"
     t.text     "body"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "kategoria"
   end
 
-  create_table "comments", :force => true do |t|
+  create_table "comments", force: true do |t|
     t.integer  "article_id"
     t.string   "name"
     t.string   "email"
     t.text     "body"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "ip"
   end
 
-  create_table "newsletters", :force => true do |t|
+  create_table "newsletters", force: true do |t|
     t.string   "email"
     t.string   "kod_dostepu"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "visit_details", :force => true do |t|
+  create_table "visit_details", force: true do |t|
     t.integer  "visit_id"
-    t.string   "ip_address", :limit => 15
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.string   "ip_address", limit: 15
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  add_index "visit_details", ["ip_address"], :name => "index_visit_details_on_ip_address"
-  add_index "visit_details", ["visit_id"], :name => "index_visit_details_on_visit_id"
+  add_index "visit_details", ["ip_address"], name: "index_visit_details_on_ip_address"
+  add_index "visit_details", ["visit_id"], name: "index_visit_details_on_visit_id"
 
-  create_table "visits", :force => true do |t|
+  create_table "visits", force: true do |t|
     t.integer  "visitable_id"
-    t.string   "visitable_type", :limit => 30
+    t.string   "visitable_type", limit: 30
     t.integer  "total_visits"
     t.integer  "unique_visits"
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  add_index "visits", ["visitable_id"], :name => "index_visits_on_visitable_id"
-  add_index "visits", ["visitable_type"], :name => "index_visits_on_visitable_type"
+  add_index "visits", ["visitable_id"], name: "index_visits_on_visitable_id"
+  add_index "visits", ["visitable_type"], name: "index_visits_on_visitable_type"
 
 end
