@@ -52,16 +52,12 @@
   margin-top:10px;
 }
 
-.about{
-  margin-top:100px;
-  margin-left:30%;
-}
-
 .imie_nazwisko{
-  margin-top:-110px;
-  margin-left:150px;
+  display:inline-table;
   font-size:60px;
   line-height: 1;
+  vertical-align:top;
+  margin-top:-7px;
 }
 
 .fb-like{

@@ -4,11 +4,7 @@
     weight: 300;
     style: 'normal';
   }
-  //src: asset-url('SourceSansPro-Light.eot');
-  //src:asset-url('SourceSansPro-Light.eot') format('embedded-opentype'),
   src: asset-url('SourceSansPro-Light.woff') format('woff');
-  //asset-url('SourceSansPro-Light.ttf') format('truetype'),
-  //asset-url('SourceSansPro-Light.svg#SourceSansPro') format('svg');
 }
 @font-face {
   font: {
@@ -16,11 +12,7 @@
     weight: 400;
     style: 'normal';
   }
-  //src: asset-url('SourceSansPro-Regular.eot');
-  //src:asset-url('SourceSansPro-Regular.eot') format('embedded-opentype'),
   src: asset-url('SourceSansPro-Regular.woff') format('woff');
-  //asset-url('SourceSansPro-Regular.ttf') format('truetype'),
-  //asset-url('SourceSansPro-Regular.svg#SourceSansPro') format('svg');
 }
 @font-face {
   font: {
@@ -28,11 +20,7 @@
     weight: 700;
     style: 'normal';
   }
-  //src: asset-url('SourceSansPro-Bold.eot');
-  //src:asset-url('SourceSansPro-Bold.eot') format('embedded-opentype'),
   src: asset-url('SourceSansPro-Bold.woff') format('woff');
-  //asset-url('SourceSansPro-Bold.ttf') format('truetype'),
-  //asset-url('SourceSansPro-Bold.svg#SourceSansPro') format('svg');
 }
 @font-face {
   font: {
@@ -40,9 +28,5 @@
     weight: 900;
     style: 'normal';
   }
-  //src: asset-url('SourceSansPro-Black.eot');
-  //src:asset-url('SourceSansPro-Black.eot') format('embedded-opentype'),
   src: asset-url('SourceSansPro-Black.woff') format('woff');
-  //asset-url('SourceSansPro-Black.ttf') format('truetype'),
-  //asset-url('SourceSansPro-Black.svg#SourceSansPro') format('svg');
 }
