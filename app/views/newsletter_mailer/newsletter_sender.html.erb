@@ -1,153 +1,169 @@
 <div>
-    <center>
-        <table style="background:url(http://blog.m1l05z.pl/assets/background.png);color:#525254;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;" bgcolor="#5a666e" border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tbody>
-	   <tr>
-            <td>             
-                <table bgcolor="#f1efe7" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <center>
+    <table style="background:url(http://blog.m1l05z.pl/assets/background.png);color:#525254;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;" bgcolor="#5a666e" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody>
+      <tr>
+        <td>
+          <table bgcolor="#f1efe7" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+            <tr>
+              <td align="center" valign="top">
+                <table style="color:#999999;font-size:10px;width:480px;" border="0" cellpadding="0" cellspacing="0">
                   <tbody>
-		   <tr>
-                    <td align="center" valign="top">
-                        <table style="color:#999999;font-size:10px;width:480px;" border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-			   <tr>
-                            <td style="padding-bottom:0px;padding-top:0px;" valign="top">
-                              <a rel="nofollow" target="_blank" href="http://blog.m1l05z.pl" style="display:block;width:150px;">
-				<img src="http://blog.m1l05z.pl/assets/logo2.png" alt="Miłosz Osiński Blog" width="150">
-                              </a>
-                            </td>
-			    <td>
-				<div style="font-size:15px;height:100%;">Zbiór doświadczeń studenta Informatyki..</div>
-			    </td>
-                           </tr>
-                         </tbody>
-		        </table>                      
+                  <tr>
+                    <td style="padding-bottom:0px;padding-top:0px;" valign="top">
+                      <a rel="nofollow" target="_blank" href="http://blog.m1l05z.pl" style="display:block;width:150px;">
+                        <% image_tag('logo2.png', width: '150', alt: 'Miłosz Osiński Blog') %>
+                      </a>
+                    </td>
+                    <td>
+                      <div style="font-size:15px;height:100%;">Zbiór doświadczeń studenta Informatyki..</div>
                     </td>
                   </tr>
-                </tbody>
-	       </table>
-                   
-                <table style="padding-bottom:20px;padding-top:20px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table style="padding-bottom:20px;padding-top:20px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+            <tr>
+              <td align="center" valign="top">
+                <table style="color:#fff;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-top:20px;" border="0" cellpadding="0" cellspacing="0" width="480">
                   <tbody>
-		   <tr>
-                    <td align="center" valign="top">
-                      <table style="color:#fff;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-top:20px;" border="0" cellpadding="0" cellspacing="0" width="480">
-  <tbody><tr>
-    <td style="padding-bottom:20px;">
-      <table border="0" cellpadding="0" cellspacing="0">
-        <tbody><tr>
-          <td valign="top">
-            <table style="color:#fff;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;" border="0" cellpadding="0" cellspacing="0">
-              <tbody><tr>
-                <td>
-                  <table style="color:#fff;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-right:20px;" align="left" border="0" cellpadding="0" cellspacing="0" width="120">
-                    <tbody><tr>
-                      <td align="center" valign="top">
-                        <img src="http://m1l05z.pl/newsletter.png" align="middle" width="100">
-                      </td>
-                    </tr>
-                  </tbody></table>
-                  <table style="color:#000;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;" align="left" border="0" cellpadding="0" cellspacing="0" width="360">
-                    <tbody><tr>
-                      <td valign="top">
-                        <h1 style="font-size:24px;font-weight:bold;line-height:1.2;margin-bottom:0;margin-top:0;">Witaj,</h1>
-                        Napewno zainteresuję Cię informacja, że na Miłosz Osiński Blog został umieszczony nowy artykuł:
-                      </td>
-                    </tr>
-                  </tbody></table>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding-top:30px;" valign="top">
-                  <blockquote style="background:#f1efe7;border-bottom:2px solid #4b555b;border-left:1px solid #626f77;border-right:1px solid #626f77;border-top:1px solid #e7e6e2;color:#636365;margin:0;padding:15px;">
-		   <%= @article.title %>
-                    <table style="font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-bottom:15px;padding-top:15px;" align="center" border="0" cellpadding="0" cellspacing="0" height="100%">
-                      <tbody><tr>
-                        <td style="background:#68a54b;padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:10px;color:white;font-weight:bold;" valign="top">
-			<%= link_to @article.title, ("http://blog.m1l05z.pl/articles/" + @article.id.to_s), :html => {:style => 'text-decoration: none;color:white;'} %>
-                        </td>
-                      </tr>
-                    </tbody></table>
-                  </blockquote>
-                </td>
-              </tr>
-            </tbody></table>
-          </td>
-        </tr>
-      </tbody></table>
-    </td>
-  </tr>
-</tbody></table>
-<table style="color:#000;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-bottom:10px;" border="0" cellpadding="0" cellspacing="0" width="480">
-  <tbody><tr>
-    <td style="padding-bottom:20px;">
-      <br>
-	Miłego czytania,
-      <br>
-	Pozdrawiam
-      <br>
-	<b>Miłosz Osiński</b>
-    </td>
-  </tr>
-</tbody></table>
-
-
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              
-                <table style="font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;" bgcolor="#3f4944" border="0" cellpadding="0" cellspacing="0" width="100%">
-                  <tbody><tr>
-                    <td align="center">
-                      <table style="color:#bfbeb2;padding-bottom:20px;padding-top:20px;width:480px;" border="0" cellpadding="0" cellspacing="0">
-                        <tbody><tr>
+                  <tr>
+                    <td style="padding-bottom:20px;">
+                      <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
                           <td valign="top">
-                            <table style="color:#bfbeb2;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:10px !important;" align="left" border="0" cellpadding="0" cellspacing="0" width="200">
-                              <tbody><tr>
-                                <td valign="top">
-                                  <a rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fblog.m1l05z.pl%2F&related=anywhereTheJavascriptAPI&text=Mi%C5%82osz%20Osi%C5%84ski%20Blog&tw_p=tweetbutton&url=http%3A%2F%2Fblog.m1l05z.pl&via=Blog%20Informatyczny%20-%20Mosinski%20Blog"><img src="http://d367zuf2xzw0m3.cloudfront.net/common/social-twitter.png" height="24" width="24"></a>&nbsp;&nbsp;
-
-                                  <a rel="nofollow" target="_blank" href="http://www.facebook.com/plugins/like.php?api_key=292604074183737&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df39c8180a92fce6%26domain%3Dblog.m1l05z.pl%26origin%3Dhttp%253A%252F%252Fblog.m1l05z.pl%252Ff1de4f282cb668c%26relation%3Dparent.parent&colorscheme=light&extended_social_context=false&font=trebuchet%20ms&href=http%3A%2F%2Fblog.m1l05z.pl%2F&layout=box_count&locale=pl_PL&node_type=link&sdk=joey&send=false&show_faces=false&width=650"><img src="http://d367zuf2xzw0m3.cloudfront.net/common/social-facebook.png" height="24" width="24"></a>
-                                  <br><br>
-                                  Indywidualny kod dostępu: <br>
-					<b><%= @newsletter.kod_dostepu %></b>
-                                  <br><br>
-                                  <%= link_to "Chcę zrezygnować z subskrypcji", "http://blog.m1l05z.pl/zgloszenie/" %>
+                            <table style="color:#fff;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                              <tr>
+                                <td>
+                                  <table style="color:#fff;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-right:20px;" align="left" border="0" cellpadding="0" cellspacing="0" width="120">
+                                    <tbody>
+                                    <tr>
+                                      <td align="center" valign="top">
+                                        <img src="http://m1l05z.pl/newsletter.png" align="middle" width="100">
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
+                                  <table style="color:#000;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;" align="left" border="0" cellpadding="0" cellspacing="0" width="360">
+                                    <tbody>
+                                    <tr>
+                                      <td valign="top">
+                                        <h1 style="font-size:24px;font-weight:bold;line-height:1.2;margin-bottom:0;margin-top:0;">Witaj,</h1>
+                                        Napewno zainteresuję Cię informacja, że na Miłosz Osiński Blog został umieszczony nowy artykuł:
+                                      </td>
+                                    </tr>
+                                    </tbody>
+                                  </table>
                                 </td>
                               </tr>
-                            </tbody>
-			   </table>
-                            <table style="text-align:center;" align="left" border="0" cellpadding="0" cellspacing="0" width="80">
-                              <tbody><tr>
-                                <td style="padding-bottom:20px;padding-top:20px;" valign="top">
-
-                                  <a rel="nofollow" target="_blank" href="http://CodeSchool.us5.list-manage.com/track/click?u=8234ed62d6a7fa87721ff1d8a&amp;id=d6034b536c&amp;e=15b30a0063">
-                                  </a>
+                              <tr>
+                                <td style="padding-top:30px;" valign="top">
+                                  <blockquote style="background:#f1efe7;border-bottom:2px solid #4b555b;border-left:1px solid #626f77;border-right:1px solid #626f77;border-top:1px solid #e7e6e2;color:#636365;margin:0;padding:15px;">
+                                    <%= @article.title %>
+                                    <table style="font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-bottom:15px;padding-top:15px;" align="center" border="0" cellpadding="0" cellspacing="0" height="100%">
+                                      <tbody>
+                                      <tr>
+                                        <td style="background:#68a54b;padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:10px;color:white;font-weight:bold;" valign="top">
+                                          <%= link_to @article.title, ("http://blog.m1l05z.pl/articles/" + @article.id.to_s), :html => {:style => 'text-decoration: none;color:white;'} %>
+                                        </td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </blockquote>
                                 </td>
                               </tr>
-                            </tbody>
-			   </table>
-                            <table style="color:#6a7c72;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:10px !important;text-align:right;" align="right" border="0" cellpadding="0" cellspacing="0" width="200">
-                              <tbody><tr>
-                                <td valign="top">
-                                  <br><br>
-                                  <em>Copyright © Miłosz Osiński,<br>Wszystkie prawa zastrzeżone.</em>
-                                </td>
-                              </tr>
-                            </tbody>
-			   </table>
+                              </tbody>
+                            </table>
                           </td>
                         </tr>
-                      </tbody>
-		     </table>
+                        </tbody>
+                      </table>
                     </td>
                   </tr>
-                </tbody>
-	       </table>
+                  </tbody>
+                </table>
+                <table style="color:#000;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:1.4;padding-bottom:10px;" border="0" cellpadding="0" cellspacing="0" width="480">
+                  <tbody>
+                  <tr>
+                    <td style="padding-bottom:20px;">
+                      <br>
+                      Miłego czytania,
+                      <br>
+                      Pozdrawiam
+                      <br>
+                      <b>Miłosz Osiński</b>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table style="font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;" bgcolor="#3f4944" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+            <tr>
+              <td align="center">
+                <table style="color:#bfbeb2;padding-bottom:20px;padding-top:20px;width:480px;" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td valign="top">
+                      <table style="color:#bfbeb2;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:10px !important;" align="left" border="0" cellpadding="0" cellspacing="0" width="200">
+                        <tbody>
+                        <tr>
+                          <td valign="top">
+                            <a rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fblog.m1l05z.pl%2F&related=anywhereTheJavascriptAPI&text=Mi%C5%82osz%20Osi%C5%84ski%20Blog&tw_p=tweetbutton&url=http%3A%2F%2Fblog.m1l05z.pl&via=Blog%20Informatyczny%20-%20Mosinski%20Blog"><img src="http://d367zuf2xzw0m3.cloudfront.net/common/social-twitter.png" height="24" width="24"></a>&nbsp;&nbsp;
+
+                            <a rel="nofollow" target="_blank" href="http://www.facebook.com/plugins/like.php?api_key=292604074183737&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df39c8180a92fce6%26domain%3Dblog.m1l05z.pl%26origin%3Dhttp%253A%252F%252Fblog.m1l05z.pl%252Ff1de4f282cb668c%26relation%3Dparent.parent&colorscheme=light&extended_social_context=false&font=trebuchet%20ms&href=http%3A%2F%2Fblog.m1l05z.pl%2F&layout=box_count&locale=pl_PL&node_type=link&sdk=joey&send=false&show_faces=false&width=650"><img src="http://d367zuf2xzw0m3.cloudfront.net/common/social-facebook.png" height="24" width="24"></a>
+                            <br><br>
+                            Indywidualny kod dostępu: <br>
+                            <b><%= @newsletter.kod_dostepu %></b>
+                            <br><br>
+                            <%= link_to "Chcę zrezygnować z subskrypcji", "http://blog.m1l05z.pl/zgloszenie/" %>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <table style="text-align:center;" align="left" border="0" cellpadding="0" cellspacing="0" width="80">
+                        <tbody>
+                        <tr>
+                          <td style="padding-bottom:20px;padding-top:20px;" valign="top">
+                            <a rel="nofollow" target="_blank" href="http://CodeSchool.us5.list-manage.com/track/click?u=8234ed62d6a7fa87721ff1d8a&amp;id=d6034b536c&amp;e=15b30a0063">
+                            </a>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <table style="color:#6a7c72;font-family:'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:10px !important;text-align:right;" align="right" border="0" cellpadding="0" cellspacing="0" width="200">
+                        <tbody>
+                        <tr>
+                          <td valign="top">
+                            <br><br>
+                            <em>Copyright © Miłosz Osiński,<br>Wszystkie prawa zastrzeżone.</em>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+          </table>
         </td>
-        </tr>
-        </tbody>
-      </table>
-    </center>
-  </div>
+      </tr>
+      </tbody>
+    </table>
+  </center>
+</div>
