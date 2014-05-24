@@ -272,10 +272,10 @@ color: #FFFFFF;
 margin: 0 auto;
 width:80%;
 }
+.search_box form {
+  position:relative;
+}
 .search_box input {
-background-image: image-url('searchbg.png');
-background-position: 90% center;
-background-repeat: no-repeat;
 border: medium none;
 border-radius: 15px;
 padding: 10px 10px;
@@ -284,7 +284,16 @@ font-size:12px;
 font-weight:normal;
 font-style:italic;
 color: #8C8C7B;
-width:90%;
+width: 90%;
+}
+.search_box input[type="submit"] {
+background-image: image-url('searchbg.png');
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+top: 0px;
+right: 0px;
+width:40px;
 }
 .bpostmeta {
 line-height: 1;

@@ -47,6 +47,7 @@
         <div class="search_box">
           <%= form_tag request.path, :method => 'get', :id => "searchform" do %>
             <%= text_field_tag  :search, params[:search], :placeholder => 'Wyszukaj:', :class => 'field', :id => 's' %>
+            <input type="submit" value="">
           <% end %>
         </div>
         <div class="mini_divider"></div>
