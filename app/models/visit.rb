@@ -1,4 +1,5 @@
 class Visit < ActiveRecord::Base
+  attr_accessible :visitable_id, :visitable_type, :total_visits, :unique_visits
   belongs_to :visitable, :polymorphic => true
   has_many :visit_details
 
