@@ -25,6 +25,6 @@ module ApplicationHelper
   end
 
   def git_revision
-    commit = `git log --pretty=format:'%h' -n 1`
+    commit = `git log --pretty=format:'%h' -n 1` || `git ls-remote heroku`
   end
 end
