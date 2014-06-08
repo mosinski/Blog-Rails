@@ -18,4 +18,12 @@ class Article < ActiveRecord::Base
   def next_article
     self.class.order('created_at asc').where("created_at > ?", created_at).first
   end
+
+  def slug
+    title.to_url.first(40)
+  end
+
+  def to_param
+    "#{id}-#{slug}"
+  end
 end

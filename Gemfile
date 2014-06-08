@@ -27,3 +27,4 @@ gem 'font-awesome-rails'
 gem 'disqus'
 gem 'rails_12factor', :group => :production
 gem 'protected_attributes'
+gem 'stringex'
