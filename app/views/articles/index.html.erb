@@ -4,7 +4,7 @@
 
 <% if @articles.count > 5 %>
   <div class="blog-pager" id="blog-pager">
-    <%= will_paginate @articles, :container => false %>
+    <%= will_paginate @articles %>
   </div>
 <% end %>
 

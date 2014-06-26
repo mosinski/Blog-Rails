@@ -1,7 +1,7 @@
 #blog-pager {
   margin: 0 auto 20px auto;
   width: 60%;
-  padding: 7px;
+  padding: 6px 6px 0px 6px;
   background: #f3f3f3;
   border: 1px solid #ccc;
   -moz-box-shadow: inset 0 0 5px #fff;
@@ -9,86 +9,7 @@
   box-shadow: inset 0 0 5px #fff;
   text-align: left;
   font-size: 18px;
-  height: 29px;
-}
-
-.blog-pager a {
-  padding: 4px 12px;
-  line-height: 20px;
-  text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  border-width: 1px 1px 1px 0px;
-  border-style: solid;
-  border-color: rgb(221, 221, 221);
-  -moz-border-top-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  border-image: none;
-  float: left;
-}
-
-.blog-pager em {
-  background-color: rgb(245, 245, 245);
-  padding: 4px 12px;
-  line-height: 20px;
-  text-decoration: none;
-  border-width: 1px 1px 1px 0px;
-  border-style: solid;
-  border-color: rgb(221, 221, 221);
-  -moz-border-top-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  border-image: none;
-  float: left;
-}
-
-.blog-pager span {
-  color: rgb(153, 153, 153);
-  cursor: default;
-  background-color: rgb(255, 255, 255);
-  padding: 4px 12px;
-  line-height: 20px;
-  text-decoration: none;
-  border-width: 1px 1px 1px 0px;
-  border-style: solid;
-  border-color: rgb(221, 221, 221);
-  -moz-border-top-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  border-image: none;
-  float: left;
-}
-
-.showpageNum a {
-  display: inline;
-  padding: 5px 6px 4px 6px;
-  margin: 3px;
-  text-decoration: none;
-  color: #666;
-  background-color: inherit;
-}
-
-.showpageNum a:hover {
-  color: #000;
-}
-
-.showpageOf {
-  padding: 5px 6px 4px 6px;
-  margin: 3px;
-  color: #333;
-  font-weight:bold;
-  background-color: inherit;
-}
-
-.showpagePoint {
-  padding: 5px 6px 4px 6px;
-  margin: 3px;
-  font-weight:bold;
-  color: #333;
-  background-color: #ccc;
+//height: 29px;
 }
 
 .blog-pager .next a {
@@ -100,36 +21,23 @@
 }
 
 .pagination {
-  height: 36px;
-  margin: 18px 0;
+  display: inline-block;
 }
 
-.pagination ul {
-  display: inline-block;
-  *display: inline;
-  margin-bottom: 0;
-  margin-left: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  *zoom: 1;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.pagination li {
-  display: inline-block;
-  *display: inline;
-  margin-bottom: 0;
-  margin-left: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  *zoom: 1;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+.pagination .current {
+  background-color: rgb(245, 245, 245);
+  padding: 0px 14px;
+  line-height: 34px;
+  text-decoration: none;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  float: left;
 }
 
 .pagination a {
@@ -139,6 +47,7 @@
   text-decoration: none;
   border: 1px solid #ddd;
   border-left-width: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .pagination a:hover,
@@ -155,25 +64,23 @@
   border-left-width: 0;
 }
 
-.pagination .disabled span,
+.pagination .disabled,
 .pagination .disabled a,
 .pagination .disabled a:hover {
-  color: #999999;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.pagination li:first-child a {
-  border-left-width: 1px;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-}
-
-.pagination li:last-child a {
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
+  color: rgb(153, 153, 153);
+  cursor: default;
+  padding: 0px 14px;
+  line-height: 34px;
+  text-decoration: none;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  float: left;
 }
 
 .pagination-centered {
