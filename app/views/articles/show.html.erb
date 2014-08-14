@@ -32,7 +32,7 @@
             </div>
           </div>
           <div style="float:left">
-            <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
+            <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://pdf.blog.m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
             <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') if Rails.env.development? %>
           </div>
           <div class="share_me" style="float:left;margin-left:200px"></div>
