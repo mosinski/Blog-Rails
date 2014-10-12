@@ -1,9 +1,17 @@
-<%= render @articles %><br />
+<div id="posts">
+  <%= render @articles %>
+</div>
 
-<center><%= page_entries_info @articles %></center>
+<br />
+
+<center>
+  <div id="info">
+    <%= page_entries_info @articles %>
+  </div>
+</center>
 
 <% if @articles.count > 5 %>
-  <div class="blog-pager" id="blog-pager">
+  <div class="blog-pager" id="blog-pager" style="display:none">
     <%= will_paginate @articles, :inner_window => 2, :outer_window => 0 %>
   </div>
 <% end %>

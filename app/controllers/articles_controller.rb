@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @articles }
+      format.js
       format.atom
       format.xml  { render :xml => @articles }
     end

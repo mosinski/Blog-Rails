@@ -1,0 +1,8 @@
+$('.blog-posts #posts').append('<%= j render @articles %>');
+<% if @articles.next_page %>
+  $('center #info').replaceWith("<div id='info'><%= j page_entries_info @articles %></div>");
+  $('.pagination').replaceWith('<%= j will_paginate @posts %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>
