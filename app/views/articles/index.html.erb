@@ -12,7 +12,7 @@
 
 <% if @articles.count > 5 %>
   <div class="blog-pager" id="blog-pager" style="display:none">
-    <%= will_paginate @articles, :inner_window => 2, :outer_window => 0 %>
+    <%= will_paginate @articles, inner_window: 2, outer_window: 0 %>
   </div>
 <% end %>
 

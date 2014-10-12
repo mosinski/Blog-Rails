@@ -17,7 +17,7 @@
           <span><i class="fa fa-clock-o"></i> <%= I18n.l @article.created_at, format: "%A, %B %d, %Y" %></span>
           <span><i class="fa fa-user"></i> Dodany przez Miłosz Osiński</span>
           <span><i class="fa fa-bookmark"></i> <%= "##{@article.kategoria}" %></span>
-          <span><i class="fa fa-comments"></i> <%= link_to "##", article_url(@article, :anchor => "disqus_thread"), :"data-disqus-identifer" => @article.id %></span>
+          <span><i class="fa fa-comments"></i> <%= link_to "##", article_url(@article, anchor: "disqus_thread"), :"data-disqus-identifer" => @article.id %></span>
         </div>
         <div class="post-header-line-1"></div>
         <div class="post-body entry-content clearfix">
@@ -32,8 +32,8 @@
             </div>
           </div>
           <div style="float:left">
-            <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), "http://www.pdf.m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
-            <%= link_to image_tag("pdfIcon.png", :title => "Artykuł w formacie PDF", :class => "ikona_pdf"), article_path(@article, :format => 'pdf') if Rails.env.development? %>
+            <%= link_to image_tag("pdfIcon.png", title: "Artykuł w formacie PDF", class: "ikona_pdf"), "http://www.pdf.m1l05z.pl/pdf/"+@article.id.to_s+".pdf" if Rails.env.production? %>
+            <%= link_to image_tag("pdfIcon.png", title: "Artykuł w formacie PDF", class: "ikona_pdf"), article_path(@article, format: 'pdf') if Rails.env.development? %>
           </div>
           <div class="share_me" style="float:left;margin-left:200px"></div>
           <div class="nastepny_poprzedni">

@@ -1,7 +1,4 @@
-var onEndless;
-
-onEndless = function() {
-  //var url;
+var onEndless = function() {
   $(window).off('scroll', onEndless);
   var url = $('.pagination a.next_page').attr('href');
   if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 100) {
@@ -17,7 +14,7 @@ onEndless = function() {
 };
 
 jQuery(function() {
-  if ($('#blog-pager').size() > 0) {
+  if ($('.pagination').size() > 0) {
     $(window).on('scroll', onEndless);
   }
 });
