@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0'
 
-ruby '2.1.3'
+ruby '2.1.5'
 
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
