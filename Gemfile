@@ -24,3 +24,4 @@ gem 'rails_12factor', group: :production
 gem 'protected_attributes'
 gem 'stringex'
 gem 'faker'
+gem 'rails-deprecated_sanitizer'

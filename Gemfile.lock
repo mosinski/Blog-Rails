@@ -165,6 +165,7 @@ DEPENDENCIES
   pg
   protected_attributes
   rails (= 4.2.0)
+  rails-deprecated_sanitizer
   rails_12factor
   sass-rails
   sqlite3
