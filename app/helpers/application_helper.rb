@@ -23,8 +23,4 @@ module ApplicationHelper
   def most_popular
     Visit.order(:unique_visits).reverse.first(3)
   end
-
-  def git_revision
-    commit = `git log --pretty=format:'%h' -n 1` || `git ls-remote heroku`
-  end
 end

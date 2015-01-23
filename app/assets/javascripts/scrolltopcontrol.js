@@ -1,16 +1,16 @@
 var scrolltotop={
   setting: {startline:100, scrollto: 0, scrollduration:1000, fadeduration:[500, 100]},
-  controlHTML: '<img src="/up.png" style="width:32px; height:32px" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
-  controlattrs: {offsetx:5, offsety:5}, //offset of control relative to right/ bottom of window corner
-  anchorkeyword: '#top', //Enter href value of HTML anchors on the page that should also act as "Scroll Up" links
+  controlHTML: '<img src="/up.png" style="width:32px; height:32px" />',
+  controlattrs: {offsetx:5, offsety:5},
+  anchorkeyword: '#top',
 
   state: {isvisible:false, shouldvisible:false},
 
   scrollup:function(){
-    if (!this.cssfixedsupport) //if control is positioned using JavaScript
-      this.$control.css({opacity:0}) //hide control immediately after clicking it
+    if (!this.cssfixedsupport)
+      this.$control.css({opacity:0})
         var dest=isNaN(this.setting.scrollto)? this.setting.scrollto : parseInt(this.setting.scrollto)
-        if (typeof dest=="string" && jQuery('#'+dest).length==1) //check element set by string exists
+        if (typeof dest=="string" && jQuery('#'+dest).length==1)
           dest=jQuery('#'+dest).offset().top
         else
           dest=0
@@ -43,15 +43,15 @@ var scrolltotop={
     jQuery(document).ready(function($){
       var mainobj=scrolltotop
       var iebrws=document.all
-      mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //not IE or IE7+ browsers in standards mode
+      mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest
       mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
       mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
       .css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
       .attr({title:'Powrót na Górę Strony'})
       .click(function(){mainobj.scrollup(); return false})
       .appendTo('body')
-      if (document.all && !window.XMLHttpRequest && mainobj.$control.text()!='') //loose check for IE6 and below, plus whether control contains any text
-      mainobj.$control.css({width:mainobj.$control.width()}) //IE6- seems to require an explicit width on a DIV containing text
+      if (document.all && !window.XMLHttpRequest && mainobj.$control.text()!='')
+      mainobj.$control.css({width:mainobj.$control.width()})
       mainobj.togglecontrol()
       $('a[href="' + mainobj.anchorkeyword +'"]').click(function(){
         mainobj.scrollup()
