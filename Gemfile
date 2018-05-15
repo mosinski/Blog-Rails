@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.5.1'
 
-gem 'rails', '4.2.1'
+gem 'rails', '5.2.0'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
 gem 'thin'
@@ -20,7 +20,7 @@ gem 'newrelic_rpm'
 gem 'font-awesome-rails'
 gem 'disqus'
 gem 'rails_12factor', group: :production
-gem 'protected_attributes'
+#gem 'protected_attributes'
 gem 'stringex'
 gem 'faker'
 gem 'rails-deprecated_sanitizer'
