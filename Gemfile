@@ -16,7 +16,6 @@ gem 'coderay'
 gem 'RedCloth'
 gem 'pdfkit'
 gem 'wkhtmltopdf-binary', group: :development
-gem 'newrelic_rpm'
 gem 'font-awesome-rails'
 gem 'disqus'
 gem 'rails_12factor', group: :production

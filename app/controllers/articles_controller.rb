@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class ArticlesController < ApplicationController
    USER_ID, PASSWORD = ENV['HTTP_USER'] || 'Administrator', ENV['HTTP_PASSWORD'] || 'password'
-   before_filter :authenticate, only: [:new, :edit, :destroy]
+   before_action :authenticate, only: [:new, :edit, :destroy]
 
   def index
     @articles = Article.page(params[:page]).per_page(5).search(params[:search], params[:page])
