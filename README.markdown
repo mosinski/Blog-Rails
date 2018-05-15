@@ -1,4 +1,4 @@
-# Mój blog w Rails 4 
+# Mój blog w Rails 5
 
 ![logo](https://raw.githubusercontent.com/mosinski/Blog-Rails/master/app/assets/images/logo2.png "Logo MOB")
 
