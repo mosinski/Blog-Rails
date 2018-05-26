@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class ArticlesController < ApplicationController
    USER_ID, PASSWORD = ENV['HTTP_USER'] || 'Administrator', ENV['HTTP_PASSWORD'] || 'password'
-   before_filter :authenticate, :only => [ :new, :edit, :destroy ]
+   before_action :authenticate, only: [:new, :edit, :destroy]
 
   def index
     @articles = Article.page(params[:page]).per_page(5).search(params[:search], params[:page])
@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
       format.json { render json: @articles }
       format.js
       format.atom
-      format.xml  { render :xml => @articles }
+      format.xml  { render xml: @articles }
     end
   end
 
@@ -24,10 +24,10 @@ class ArticlesController < ApplicationController
       format.html
       format.json { render json: @article }
       format.pdf {
-        html = render_to_string(:layout => false , :action => "show.html.erb", :formats => [:html], :handler => [:erb])
+        html = render_to_string(layout: false , action: "show.html.erb", formats: [:html], handler: [:erb])
         kit = PDFKit.new(html)
         kit.stylesheets << "#{Rails.root}/app/assets/stylesheets/application.css"
-        send_data(kit.to_pdf, :filename => "#{@article.title}.pdf", :type => 'application/pdf')
+        send_data(kit.to_pdf, filename: "#{@article.title}.pdf", type: 'application/pdf')
         return
       }
     end
@@ -98,7 +98,7 @@ class ArticlesController < ApplicationController
   end
 
   def feed
-    @articles = Article.all.order('accepted desc')
+    @articles = Article.all.order(accepted: :desc)
 
     respond_to do |format|
       format.atom

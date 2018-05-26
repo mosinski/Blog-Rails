@@ -1,6 +1,5 @@
 class Visit < ActiveRecord::Base
-  attr_accessible :visitable_id, :visitable_type, :total_visits, :unique_visits
-  belongs_to :visitable, :polymorphic => true
+  belongs_to :visitable, polymorphic: true
   has_many :visit_details
 
   def self.track(obj, ip_address)
@@ -9,6 +8,6 @@ class Visit < ActiveRecord::Base
       visit.increment!(:unique_visits)
     end
     visit.increment!(:total_visits)
-    visit_detail = visit.visit_details.create(:ip_address => ip_address)
+    visit_detail = visit.visit_details.create(ip_address: ip_address)
   end
 end

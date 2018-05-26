@@ -1,6 +1,6 @@
 class NewslettersController < ApplicationController
   USER_ID, PASSWORD = ENV['HTTP_USER'], ENV['HTTP_PASSWORD']
-  before_filter :authenticate, :only => [ :index, :edit ]
+  before_action :authenticate, only: [ :index, :edit ]
 
   def index
     @newsletters = Newsletter.all
@@ -84,10 +84,11 @@ class NewslettersController < ApplicationController
     end
   end
 
-private
+  private
+
    def authenticate
       authenticate_or_request_with_http_basic do |id, password|
-          id == USER_ID && password == PASSWORD
+        id == USER_ID && password == PASSWORD
       end
    end
 end
