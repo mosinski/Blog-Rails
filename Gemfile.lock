@@ -91,6 +91,9 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    passenger (5.3.1)
+      rack
+      rake (>= 0.8.1)
     pdfkit (0.8.2)
     pg (1.0.0)
     rack (2.0.5)
@@ -180,6 +183,7 @@ DEPENDENCIES
   faker
   font-awesome-rails
   jquery-rails
+  passenger (~> 5.3.1)
   pdfkit
   pg
   rails (= 5.2.0)

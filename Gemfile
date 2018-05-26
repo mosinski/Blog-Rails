@@ -10,7 +10,7 @@ gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
 gem 'jquery-rails'
-gem "bb-ruby"
+gem 'bb-ruby'
 gem 'will_paginate'
 gem 'coderay'
 gem 'RedCloth'
@@ -23,3 +23,4 @@ gem 'rails_12factor', group: :production
 gem 'stringex'
 gem 'faker'
 gem 'rails-deprecated_sanitizer'
+gem 'passenger', '~> 5.3.1'
