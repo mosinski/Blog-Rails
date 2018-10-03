@@ -16,11 +16,5 @@ module Blog
     config.assets.enabled = true
     config.assets.version = '1.0'
     config.time_zone = 'Warsaw'
-    config.after_initialize do
-      Disqus::defaults[:account] = ENV['disqus_shortname']
-      Disqus::defaults[:developer] = true
-      Disqus::defaults[:container_id] = "disqus_thread"
-      Disqus::defaults[:show_powered_by] = false
-    end
   end
 end

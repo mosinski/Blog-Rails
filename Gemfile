@@ -5,6 +5,7 @@ ruby '2.5.1'
 gem 'rails', '5.2.0'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
+gem 'mongoid', group: :production
 gem 'thin'
 gem 'sass-rails'
 gem 'coffee-rails'
@@ -17,10 +18,11 @@ gem 'RedCloth'
 gem 'pdfkit'
 gem 'wkhtmltopdf-binary', group: :development
 gem 'font-awesome-rails'
-gem 'disqus'
 gem 'rails_12factor', group: :production
-#gem 'protected_attributes'
 gem 'stringex'
 gem 'faker'
 gem 'rails-deprecated_sanitizer'
 gem 'passenger', '~> 5.3.1'
+gem 'ahoy_matey'
+gem 'chartkick'
+gem 'groupdate'

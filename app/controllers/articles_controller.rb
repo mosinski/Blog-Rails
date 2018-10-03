@@ -1,7 +1,7 @@
 # encoding: UTF-8
 class ArticlesController < ApplicationController
-   USER_ID, PASSWORD = ENV['HTTP_USER'] || 'Administrator', ENV['HTTP_PASSWORD'] || 'password'
-   before_action :authenticate, only: [:new, :edit, :destroy]
+  USER_ID, PASSWORD = ENV['HTTP_USER'] || 'Administrator', ENV['HTTP_PASSWORD'] || 'password'
+  before_action :authenticate, only: [:new, :edit, :destroy]
 
   def index
     @articles = Article.page(params[:page]).per_page(5).search(params[:search], params[:page])
@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @article.body = coderay(@article.body)
-    Visit.track(@article, request.remote_ip)
+    ahoy.track 'Visit', request.path_parameters.merge(locale: I18n.locale)
 
     respond_to do |format|
       format.html
@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(params[:article])
+    @article = Article.new(article_params)
 
     respond_to do |format|
       if @article.save
@@ -91,6 +91,11 @@ class ArticlesController < ApplicationController
   end
 
   private
+
+  def article_params
+    params.require(:article).permit(:title,:kategoria,:body)
+  end
+
   def authenticate
     authenticate_or_request_with_http_basic do |id, password|
       id == USER_ID && password == PASSWORD

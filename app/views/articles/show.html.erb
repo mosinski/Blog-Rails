@@ -37,7 +37,7 @@
           </div>
           <div class="share_me" style="float:left;margin-left:200px"></div>
           <div class="nastepny_poprzedni">
-            <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> | 
+            <%= link_to("« Poprzedni Artykuł", @article.previous_article) if @article.previous_article %> |
             <%= link_to("Następny Artykuł »", @article.next_article) if @article.next_article %>
           </div>
           <div style="clear: both;"></div>
@@ -48,22 +48,9 @@
   </div>
 
   <div id="comment-block">
-    <div id ="disqus_thread">
-      <%= raw disqus_thread %>
-    </div>
+    <%= render 'disqus' %>
   </div>
 </div>
-
-<script type="text/javascript">
-  var disqus_shortname = '<%= ENV['disqus_shortname'] %>';
-
-  (function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
-</script>
 <script>
   var share = new Share(".share_me", {
     ui: {
