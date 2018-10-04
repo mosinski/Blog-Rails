@@ -6,6 +6,7 @@ gem 'rails', '5.2.0'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
 gem 'mongoid', group: :productions
+gem 'puma'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
@@ -21,7 +22,6 @@ gem 'rails_12factor', group: :production
 gem 'stringex'
 gem 'faker'
 gem 'rails-deprecated_sanitizer'
-gem 'passenger', '~> 5.3.1'
 gem 'ahoy_matey'
 gem 'chartkick'
 gem 'groupdate'
