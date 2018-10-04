@@ -5,7 +5,7 @@ ruby '2.5.1'
 gem 'rails', '5.2.0'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
-gem 'mongoid', group: :productions
+gem 'mongoid', group: :production
 gem 'puma'
 gem 'sass-rails'
 gem 'coffee-rails'
