@@ -2,7 +2,7 @@ class CreateVisits < ActiveRecord::Migration[4.2]
   def self.up
     create_table :visits do |t|
       t.integer :visitable_id
-      t.string :visitable_type, :limit => 30
+      t.string :visitable_type, limit: 30
       t.integer :total_visits
       t.integer :unique_visits
       t.timestamps

@@ -1,4 +1,5 @@
 Blog::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :newsletters
 
   resources :articles do

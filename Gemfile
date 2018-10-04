@@ -5,8 +5,7 @@ ruby '2.5.1'
 gem 'rails', '5.2.0'
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
-gem 'mongoid', group: :production
-gem 'thin'
+gem 'mongoid', group: :productions
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
@@ -26,3 +25,6 @@ gem 'passenger', '~> 5.3.1'
 gem 'ahoy_matey'
 gem 'chartkick'
 gem 'groupdate'
+gem 'ckeditor'
+gem 'carrierwave'
+gem 'carrierwave-ftp', require: 'carrierwave/storage/ftp'
