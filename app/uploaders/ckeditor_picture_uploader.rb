@@ -13,8 +13,15 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
     "uploads/ckeditor/pictures/#{model.id}"
   end
 
+  version :content
+
   version :mobile do
-    process resize_to_limit: [800, nil]
+    process resize_to_limit: [400, nil]
+    process quality: 80
+  end
+
+  version :thumb do
+    process resize_to_limit: [80, nil]
     process quality: 80
   end
 

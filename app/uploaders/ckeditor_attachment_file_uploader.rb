@@ -1,8 +1,7 @@
 # encoding: utf-8
-require 'carrierwave'
-
 class CkeditorAttachmentFileUploader < CarrierWave::Uploader::Base
   include Ckeditor::Backend::CarrierWave
+  include CarrierWave::MiniMagick
 
   if Rails.env.production?
     storage :ftp
